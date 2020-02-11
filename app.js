@@ -342,7 +342,7 @@ function handlePostback(sender_psid, received_postback) {
   // Set the response based on the postback payload
   if (payload === 'one') {
     response = {
-      "test":"hello"
+      "text":"hello"
     }
   }
   else if (payload === 'yes') {
