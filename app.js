@@ -340,7 +340,12 @@ function handlePostback(sender_psid, received_postback) {
   let payload = received_postback.payload;
 
   // Set the response based on the postback payload
-  if (payload === 'one') {
+  if (payload === 'get_started') {
+    response = {
+      "text":"Hello.."
+    }
+  }
+  else if (payload === 'one') {
     response = {
     "attachment":{
       "type":"template",
@@ -452,7 +457,7 @@ function callSendAPI(sender_psid, response) {
 
 function setupGetStartedButton(res){
         var messageData = {
-                "get_started":{"payload":"USER_DEFINED_PAYLOAD"}                
+                "get_started":{"payload":"get_started"}                
         };
         // Start the request
         request({
