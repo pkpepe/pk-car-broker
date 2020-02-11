@@ -342,11 +342,10 @@ function handlePostback(sender_psid, received_postback) {
   // Set the response based on the postback payload
   if (payload === 'get_started') {
     response = {
-      "text":"Hello! Welcome to PK Car-Broker"
+      "text":"Hello! Welcome to PK Car-Broker."
     }
   }
-  else if (payload === 'get_started'){
-    response = {}
+
   }
   else if (payload === 'one') {
     response = {
