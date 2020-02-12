@@ -381,7 +381,13 @@ function handlePostback(sender_psid, received_postback) {
   }
 
 else if (payload === 'one') {
- response = {
+  response ={
+    "text" : "Please enter you vehicle information below"
+  }
+}
+
+  else if (payload === 'two') {
+   response = {
     "attachment":{
       "type":"template",
       "payload":{
@@ -390,27 +396,25 @@ else if (payload === 'one') {
         "buttons":[ 
           {
             "type":"postback",
-            "title":"Sell my car",
-            "payload":"one"
+            "title":"SUVs",
+            "payload":"suv"
           },
           {
             "type":"postback",
-            "title":"Find me a car",
-            "payload":"two"
+            "title":"Sedan",
+            "payload":"sedan"
           },
           {
             "type":"postback",
-            "title":"Trend only",
-            "payload":"three"
+            "title":"Minivans",
+            "payload":"mini"
           }
         ]
       }
     }
   }
-}
-
-  else if (payload === 'two') {
-    response = {
+  else if (payload === 'mini')
+   response = {
     "attachment":{
       "type":"template",
       "payload":{
