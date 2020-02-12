@@ -166,7 +166,7 @@ function handleMessage(sender_psid, received_message) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Hi..Mingalar Par Bya. What can I help you?",
+        "text":"Hi..Mingalar Par Bya.  How can we help you today?",
         "buttons":[ 
           {
             "type":"postback",
@@ -195,7 +195,7 @@ function handleMessage(sender_psid, received_message) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Hello..Mingalar Par Bya. What can I help you?",
+        "text":"Hello..Mingalar Par Bya. How can we help you today?",
         "buttons":[ 
           {
             "type":"postback",
@@ -376,12 +376,15 @@ function handlePostback(sender_psid, received_postback) {
   // Set the response based on the postback payload
   if (payload === 'get_started') {
     response = {
-      "text":"Hello! Welcome to PK Car-Broker. Would you please type 'Hi' "
+      "text":"Hello! Welcome to PK Car-Broker. Would you please type 'Hi' or 'Hello'"
     }
   }
 
+else if (payload === 'one') {
+  "text" : "Please enter you vehicle information below"
+}
 
-  else if (payload === 'one') {
+  else if (payload === 'two') {
     response = {
     "attachment":{
       "type":"template",
