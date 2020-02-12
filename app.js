@@ -395,7 +395,7 @@ else if (payload === 'one') {
         "elements":[
            {
             "title":"2013 Honda Fit Shuttle",
-            "image_url":"C:\Users\Hnin Bhone Wint\Desktop\Fit Shuttle.jpg",
+            "image_url":"https://C:\Users\Hnin Bhone Wint\Desktop\Fit Shuttle.jpg",
             "subtitle":"MMK : 250 lkh",
             "default_action": {
               "type": "web_url",
