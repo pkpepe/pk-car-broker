@@ -385,9 +385,8 @@ else if (payload === 'one') {
     "text" : "Please enter you vehicle information below"
   }
 }
-
-  else if (payload === 'two') {
-   response = {
+else if (payload === 'two'){
+    response = {
     "attachment":{
       "type":"template",
       "payload":{
@@ -413,8 +412,10 @@ else if (payload === 'one') {
       }
     }
   }
-  else if (payload === 'mini')
-   response = {
+  }
+
+  else if (payload === 'mini') {
+    response = {
     "attachment":{
       "type":"template",
       "payload":{
