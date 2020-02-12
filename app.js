@@ -378,32 +378,26 @@ else if (payload === 'one') {
 }
 else if (payload === 'two'){
     response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Choosing a type of vehicle you are looking for",
-        "buttons":[ 
-          {
-            "type":"postback",
+
+        "text":"Choosing a type of vehicle you are looking for", "quick_replies": [
+       { "Content-Type": "text",
             "title":"SUVs",
             "payload":"suv"
           },
           {
-            "type":"postback",
+            "Content-Type": "text",
             "title":"Sedan",
             "payload":"sed"
           },
           {
-            "type":"postback",
+           "Content-Type": "text",
             "title":"Minivans",
             "payload":"mini"
-          }
-        ]
+          }]
+        
       }
     }
-  }
-  }
+ }
 
   else if (payload === 'mini') {
     response = {
