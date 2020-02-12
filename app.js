@@ -763,7 +763,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2013 Honda Fit Shuttle. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -787,7 +787,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2004 Toyota Wish. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -811,7 +811,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2012 Mitsubishi Colt Plus. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -835,7 +835,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2010 Toyota Noah. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -859,7 +859,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2005 Volkswagen New Bettle. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -883,7 +883,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2005 Toyota Harrier. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -907,7 +907,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2010 Toyota Vanguard. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -931,7 +931,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2006 Toyota Hilux Surf. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -955,7 +955,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2006 Toyota Kluger. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -979,7 +979,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2013 Toyota Prado. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1003,7 +1003,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2004 Toyota Mark 2. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1027,7 +1027,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2004 Toyota Crown. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1051,7 +1051,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2010 Toyota Camry. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1075,7 +1075,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2005 Toyota Mark X. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1099,7 +1099,7 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Great Choice. Do you want to make appointment for it?",
+        "text":"2018 KIA Optima. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
