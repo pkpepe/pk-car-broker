@@ -161,9 +161,32 @@ function handleMessage(sender_psid, received_message) {
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
-     response = {
-      "text":'Hello..Min Ga Lar Par Shint. What can I help You?'
+      response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Hi..Mingalar Par Bya. What can I help you?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Sell my car",
+            "payload":"one"
+          },
+          {
+            "type":"postback",
+            "title":"Find me a car",
+            "payload":"two"
+          },
+          {
+            "type":"postback",
+            "title":"Trend only",
+            "payload":"three"
+          }
+        ]
+      }
     }
+  }
   }
   else if (received_message.text == "Hello") {
    
@@ -172,7 +195,7 @@ function handleMessage(sender_psid, received_message) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"What can I help you?",
+        "text":"Hello..Mingalar Par Bya. What can I help you?",
         "buttons":[ 
           {
             "type":"postback",
