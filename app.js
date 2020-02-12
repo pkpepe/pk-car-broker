@@ -1117,6 +1117,30 @@ else if (payload === 'two'){
     }
   }
   }
+   else if (payload === 'y'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"When would you like to do it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Pick Date and Time",
+            "payload":"dt"
+          },
+          {
+            "type":"postback",
+            "title":"I'm flexible",
+            "payload":"fx"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
  
   else if (payload === 'yes') {
     response = { "text": "Thanks!" }
