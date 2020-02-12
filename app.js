@@ -169,6 +169,7 @@ function handleMessage(sender_psid, received_message) {
     response = {
       "text":'Hello..Min Ga Lar Par Shint. What can I help You?'
     }
+
   }
   else if (received_message.text == "button") {
     response = {
@@ -180,17 +181,17 @@ function handleMessage(sender_psid, received_message) {
         "buttons":[ 
           {
             "type":"postback",
-            "title":"Sell",
+            "title":"Sell my car",
             "payload":"one"
           },
           {
             "type":"postback",
-            "title":"Buy",
+            "title":"Find me a car",
             "payload":"two"
           },
           {
             "type":"postback",
-            "title":"Trend",
+            "title":"Trend only",
             "payload":"three"
           }
         ]
