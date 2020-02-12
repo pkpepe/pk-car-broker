@@ -757,6 +757,7 @@ else if (payload === 'two'){
     }
   }
   }
+}
   else if (payload === 'sc'){
     response ={
       "text" : "Great Choice! Do you want to make appointment for it?"
