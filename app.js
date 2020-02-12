@@ -429,7 +429,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -450,7 +450,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -471,7 +471,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -492,7 +492,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -513,7 +513,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           }
@@ -547,7 +547,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -568,7 +568,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -589,7 +589,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -610,7 +610,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           },
@@ -631,7 +631,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"sc"
               }              
             ]      
           }
@@ -639,6 +639,11 @@ else if (payload === 'two'){
       }
     }
   }
+  }
+  else if (payload === 'sc'){
+    response ={
+      "text" : "Do you want to make appointment?"
+    }
   }
   else if (payload === 'yes') {
     response = { "text": "Thanks!" }
