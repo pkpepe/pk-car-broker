@@ -395,7 +395,7 @@ else if (payload === 'one') {
         "elements":[
            {
             "title":"2013 Honda Fit Shuttle",
-            "image_url":"https://petersfancybrownhats.com/company_image.png",
+            "image_url":"C:\Users\Hnin Bhone Wint\Desktop\Fit Shuttle.jpg",
             "subtitle":"MMK : 250 lkh",
             "default_action": {
               "type": "web_url",
