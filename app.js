@@ -359,7 +359,7 @@ function handlePostback(sender_psid, received_postback) {
     }
   }
 
-  }
+
   else if (payload === 'one') {
     response = {
     "attachment":{
