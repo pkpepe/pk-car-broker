@@ -381,7 +381,8 @@ function handlePostback(sender_psid, received_postback) {
   }
 
 else if (payload === 'one') {
-  "text" : "Please enter you vehicle information below"
+  response ={
+    "text" : "Please enter you vehicle information below"
 }
 
   else if (payload === 'two') {
