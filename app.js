@@ -392,7 +392,7 @@ else if (payload === 'two'){
           {
             "type":"postback",
             "title":"Sedan",
-            "payload":"sedan"
+            "payload":"sed"
           },
           {
             "type":"postback",
@@ -428,7 +428,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -449,7 +449,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -470,7 +470,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -491,7 +491,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -512,7 +512,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -546,7 +546,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -567,7 +567,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -588,7 +588,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -609,7 +609,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -630,7 +630,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -640,7 +640,7 @@ else if (payload === 'two'){
     }
   }
   }
-   else if (payload === 'sedan') {
+   else if (payload === 'sed') {
     response = {
     "attachment":{
       "type":"template",
@@ -663,7 +663,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -684,7 +684,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -705,7 +705,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -726,7 +726,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -747,7 +747,7 @@ else if (payload === 'two'){
                 "title":"More Information"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested. Start Buying Now!",
+                "title":"Yes, I'm interested",
                 "payload":"sc"
               }              
             ]      
@@ -757,7 +757,7 @@ else if (payload === 'two'){
     }
   }
   }
-}
+
   else if (payload === 'sc'){
     response ={
       "text" : "Great Choice! Do you want to make appointment for it?"
