@@ -640,7 +640,7 @@ else if (payload === 'two'){
     }
   }
   }
-   else if (payload === 'sed') {
+    else if (payload === 'sed') {
     response = {
     "attachment":{
       "type":"template",
@@ -648,18 +648,18 @@ else if (payload === 'two'){
         "template_type":"generic",
         "elements":[
            {
-            "title":"2004 Toyota Mark 2",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/84551911_102583907996881_3474842852742135808_o.jpg?_nc_cat=107&_nc_eui2=AeFTt5P5ACiYEyAX4EreMLH7qWFEaiX7F4DsJl5hR9PrdJXyq46-skymD4lZ6b0CPgC5Y38JSanNxKJBdfDEhwoOpSA1DHRXR1O3TO5uHJjLAg&_nc_ohc=wYOcnPJ3hscAX8gpN2V&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=d9d2a10f59bbcc7c2e1e8cf99476edab&oe=5F037224",
-            "subtitle":"MMK : 230 lkh",
+            "title":"2013 Honda Fit Shuttle",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86171030_102456341342971_5236349205873688576_n.jpg?_nc_cat=110&_nc_eui2=AeGdBiFegBevbDZIyGu26Qc3KzsAcpqTop4NCWUksAqWDi3r7YKSKb6B-Oyq1R6FyzPQmynZQq70AxV5CMCtH028kJrtQiO5BCyKKWhww8LQWQ&_nc_ohc=97aIkwvxUh4AX8Yz77e&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=89ff1b619ffd67704ea2d2809bdd145d&oe=5EB9E396",
+            "subtitle":"MMK : 250 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+              "url": "https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+                "url":"https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -669,18 +669,18 @@ else if (payload === 'two'){
             ]      
           },
            {
-            "title":"2004 Toyota Crown",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84676069_102585864663352_1603042813191127040_n.jpg?_nc_cat=105&_nc_eui2=AeHlX8TBzftLr14QHji309b2jWEl-ZQcfv3SZJ_GR8eu8oqouix_BJNdmW1tchonXA1CGEo9C0Q7AFupZQy1Zo0kWX9xk_6zn6LFVWnAg7xq1Q&_nc_ohc=zaqcL9uVb7QAX_NuRdW&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=7a7a70fe72f90ccdd697196f17243169&oe=5EFE6BE9",
-            "subtitle":"MMK : 380 lkh",
+            "title":"2004 Toyota Wish",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84394208_102497734672165_2684528394506338304_n.jpg?_nc_cat=106&_nc_eui2=AeGMGmlfPWwAp5gBHq21VT1FkcQtaTsDc0yycvz3h59qLeuZV-mThfM7g0ImjAZ63pQoG0QSaYTrsCzDo1DgtPZ52M9UK9IszNiwHQ6_oOLp5A&_nc_ohc=c3beta0dbM8AX95CPhc&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=9e3f27692acf5de198eddf6de0ba8bf9&oe=5ED293FF",
+            "subtitle":"MMK : 220 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+              "url": "https://www.heincarrental.com/vehicles/toyota-wish/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+                "url":"https://www.heincarrental.com/vehicles/toyota-wish/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -690,18 +690,18 @@ else if (payload === 'two'){
             ]      
           },
            {
-            "title":"2018 Toyota VIOS",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84702193_102589871329618_6458092377373409280_n.png?_nc_cat=110&_nc_eui2=AeGyoesc4YiKedPm7gN7L4APK8T9spIIHL9cNa912qn633qr6-haKK7YHkjwHQvnpxEn0U5Olk6VP0mbep9ZqUv6QGQL7oRVoy1KObPN5Yk4RA&_nc_ohc=eqQKX2HB79sAX9LyvCR&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=5628283660b57c75b98243c6f571fd07&oe=5ED1C614",
-            "subtitle":"MMK : 330 lkh",
+            "title":"2012 Mitsubishi Colt Plus",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86193222_102511374670801_1688282318990475264_n.jpg?_nc_cat=107&_nc_eui2=AeFFgQH3QZjtFcLjWn3Rjq8yLrJo1TvGCOqpz0BkT2ilQHVgk8tdGKJeIoarRPIHXDeoDc0CspiA9o4r5S6O4Vu8mNBlwD_ENNOpZDJ88vv2LQ&_nc_ohc=BlPQjyzMvJYAX--l25M&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=0a0a2d3b162f8851ff1462cbdcf60f2a&oe=5ED37B21",
+            "subtitle":"MMK : 210 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.torqueautos.asia/japanese-used-toyota-vios-sedan_21076.html",
+              "url": "https://blauda.com/idx/25546.html",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.torqueautos.asia/japanese-used-toyota-vios-sedan_21076.html",
+                "url":"https://blauda.com/idx/25546.html",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -711,18 +711,18 @@ else if (payload === 'two'){
             ]      
           },
           {
-            "title":"2005 Toyota Mark X",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/86253261_102592601329345_4494208982025502720_o.jpg?_nc_cat=108&_nc_eui2=AeHhuX9sJrYCklnpnO3KQqoaoA4ypLO7gZcBrgXBsxZ_WGyKRHMI8kuwct6qqWa-Zhh4n8tb-ODDPnxmWQRQdYuQ6wccf-Lzc9rN0MEJfHA8YA&_nc_ohc=J7RB3iwcaZwAX83Z5l7&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=5adbe25c9a66f8fc702366bc00d1e784&oe=5EC7F1FE",
-            "subtitle":"MMK : 290 lkh",
+            "title":"2010 Toyota Noah",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84209186_102517074670231_7546471381198700544_n.jpg?_nc_cat=108&_nc_eui2=AeFICcVzim4m44Xkr1MINzq8Jqo7asHuCZxk_aL-El7LuiueSmNq4JJRKeMAAPnUTP58B4T7_bcxZ-gicMvdcVGoVzayDFtdluiMx4lVZVN9zA&_nc_ohc=13BC1bcdKfUAX-fPIre&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=09dcfe4dade2a20997dc0ea6e4f55122&oe=5EB56ACB",
+            "subtitle":"MMK : 240 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
+              "url": "https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
+                "url":"https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -732,18 +732,18 @@ else if (payload === 'two'){
             ]      
           },
           {
-            "title":"2018 KIA Optima",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84611927_102597167995555_8749900176493117440_n.jpg?_nc_cat=101&_nc_eui2=AeETAIG-mQ1jdW0ARwOImJnU4Ps9YHPQoLUv-oWhX8lbOXU2ddi-vh_JQxS6UOTZsrcTNfVbSQJ9ZpFjyvNXRW7SdYYpKylYVKRdWAKnX2Ykaw&_nc_ohc=uspEaLM2KdgAX_WvESR&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=f9c1fdbc538239841926d0514e4e6339&oe=5EC0B763",
-            "subtitle":"MMK : 520 lkh",
+            "title":"2005 Volkswagen New Bettle",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84663096_102520038003268_3565139283100565504_n.jpg?_nc_cat=106&_nc_eui2=AeGKcsR5tyDJwoS8vvkGl6rn8_LcH0OkYbNSPZ0GMAT40Ynv3jTF8xeY2urRUl_PczC2v-URviXgPomifWJIMkeW5JsDPxCm8RjnF1makXhZpA&_nc_ohc=0tdY9XY8r7QAX9hiq36&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=e0f5b850f1c4824ca4ced1f3ae98453d&oe=5EC3C5A6",
+            "subtitle":"MMK : 123 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
+              "url": "https://www.myanmarcarmarketplace.com/for-sale/volkswagen/volkswagen-new-beetle_i8",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
+                "url":"https://www.myanmarcarmarketplace.com/for-sale/volkswagen/volkswagen-new-beetle_i8",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -757,11 +757,29 @@ else if (payload === 'two'){
     }
   }
   }
-
-  else if (payload === 'sc'){
-    response ={
-      "text" : "Great Choice! Do you want to make appointment for it?"
+  else if (payload === 'two'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Choosing a type of vehicle you are looking for",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"Sedan",
+            "payload":"n"
+          
+          }
+        ]
+      }
     }
+  }
   }
   else if (payload === 'yes') {
     response = { "text": "Thanks!" }
