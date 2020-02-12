@@ -166,15 +166,13 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   else if (received_message.text == "Hello") {
-    response = {
-      "text":'Hello..Min Ga Lar Par Shint. What can I help You?'
-    }
+   
      response = {
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Try the postback button!",
+        "text":"What can I help you?",
         "buttons":[ 
           {
             "type":"postback",
@@ -355,7 +353,7 @@ function handlePostback(sender_psid, received_postback) {
   // Set the response based on the postback payload
   if (payload === 'get_started') {
     response = {
-      "text":"Hello! Welcome to PK Car-Broker. How can I help you?"
+      "text":"Hello! Welcome to PK Car-Broker. Would you please type 'Hi' "
     }
   }
 
