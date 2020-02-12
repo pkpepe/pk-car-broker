@@ -429,7 +429,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc1"
               }              
             ]      
           },
@@ -450,7 +450,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc2"
               }              
             ]      
           },
@@ -471,7 +471,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc3"
               }              
             ]      
           },
@@ -492,7 +492,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc4"
               }              
             ]      
           },
@@ -513,7 +513,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc5"
               }              
             ]      
           }
@@ -547,7 +547,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc6"
               }              
             ]      
           },
@@ -568,7 +568,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc7"
               }              
             ]      
           },
@@ -589,7 +589,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc8"
               }              
             ]      
           },
@@ -610,7 +610,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc9"
               }              
             ]      
           },
@@ -631,7 +631,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc10"
               }              
             ]      
           }
@@ -664,7 +664,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc11"
               }              
             ]      
           },
@@ -685,7 +685,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc12"
               }              
             ]      
           },
@@ -706,7 +706,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc13"
               }              
             ]      
           },
@@ -727,7 +727,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc14"
               }              
             ]      
           },
@@ -748,7 +748,7 @@ else if (payload === 'two'){
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc"
+                "payload":"sc15"
               }              
             ]      
           }
@@ -757,13 +757,13 @@ else if (payload === 'two'){
     }
   }
   }
-  else if (payload === 'sc'){
+  else if (payload === 'sc1'){
     response = {
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Choosing a type of vehicle you are looking for",
+        "text":"Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -781,6 +781,343 @@ else if (payload === 'two'){
     }
   }
   }
+  else if (payload === 'sc2'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc3'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc4'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc5'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc6'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc7'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc8'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc9'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc10'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc11'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc12'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc13'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc14'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc15'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+ 
   else if (payload === 'yes') {
     response = { "text": "Thanks!" }
   } else if (payload === 'no') {
