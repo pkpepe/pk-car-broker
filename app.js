@@ -383,7 +383,7 @@ else if (payload === 'two'){
       "payload":{
         "template_type":"button",
         "text":"Choosing a type of vehicle you are looking for",
-        "buttons":[ 
+        "quick_replies":[ 
           {
             "type":"postback",
             "title":"SUVs",
