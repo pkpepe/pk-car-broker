@@ -640,7 +640,123 @@ else if (payload === 'two'){
     }
   }
   }
-   
+   else if (payload === 'sedan') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"2004 Toyota Mark 2",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/84551911_102583907996881_3474842852742135808_o.jpg?_nc_cat=107&_nc_eui2=AeFTt5P5ACiYEyAX4EreMLH7qWFEaiX7F4DsJl5hR9PrdJXyq46-skymD4lZ6b0CPgC5Y38JSanNxKJBdfDEhwoOpSA1DHRXR1O3TO5uHJjLAg&_nc_ohc=wYOcnPJ3hscAX8gpN2V&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=d9d2a10f59bbcc7c2e1e8cf99476edab&oe=5F037224",
+            "subtitle":"MMK : 230 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested. Start Buying Now!",
+                "payload":"sc"
+              }              
+            ]      
+          },
+           {
+            "title":"2004 Toyota Crown",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84676069_102585864663352_1603042813191127040_n.jpg?_nc_cat=105&_nc_eui2=AeHlX8TBzftLr14QHji309b2jWEl-ZQcfv3SZJ_GR8eu8oqouix_BJNdmW1tchonXA1CGEo9C0Q7AFupZQy1Zo0kWX9xk_6zn6LFVWnAg7xq1Q&_nc_ohc=zaqcL9uVb7QAX_NuRdW&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=7a7a70fe72f90ccdd697196f17243169&oe=5EFE6BE9",
+            "subtitle":"MMK : 380 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested. Start Buying Now!",
+                "payload":"sc"
+              }              
+            ]      
+          },
+           {
+            "title":"2018 Toyota VIOS",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84702193_102589871329618_6458092377373409280_n.png?_nc_cat=110&_nc_eui2=AeGyoesc4YiKedPm7gN7L4APK8T9spIIHL9cNa912qn633qr6-haKK7YHkjwHQvnpxEn0U5Olk6VP0mbep9ZqUv6QGQL7oRVoy1KObPN5Yk4RA&_nc_ohc=eqQKX2HB79sAX9LyvCR&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=5628283660b57c75b98243c6f571fd07&oe=5ED1C614",
+            "subtitle":"MMK : 330 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.torqueautos.asia/japanese-used-toyota-vios-sedan_21076.html",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.torqueautos.asia/japanese-used-toyota-vios-sedan_21076.html",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested. Start Buying Now!",
+                "payload":"sc"
+              }              
+            ]      
+          },
+          {
+            "title":"2005 Toyota Mark X",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/86253261_102592601329345_4494208982025502720_o.jpg?_nc_cat=108&_nc_eui2=AeHhuX9sJrYCklnpnO3KQqoaoA4ypLO7gZcBrgXBsxZ_WGyKRHMI8kuwct6qqWa-Zhh4n8tb-ODDPnxmWQRQdYuQ6wccf-Lzc9rN0MEJfHA8YA&_nc_ohc=J7RB3iwcaZwAX83Z5l7&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=5adbe25c9a66f8fc702366bc00d1e784&oe=5EC7F1FE",
+            "subtitle":"MMK : 290 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested. Start Buying Now!",
+                "payload":"sc"
+              }              
+            ]      
+          },
+          {
+            "title":"2018 KIA Optima",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84611927_102597167995555_8749900176493117440_n.jpg?_nc_cat=101&_nc_eui2=AeETAIG-mQ1jdW0ARwOImJnU4Ps9YHPQoLUv-oWhX8lbOXU2ddi-vh_JQxS6UOTZsrcTNfVbSQJ9ZpFjyvNXRW7SdYYpKylYVKRdWAKnX2Ykaw&_nc_ohc=uspEaLM2KdgAX_WvESR&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=f9c1fdbc538239841926d0514e4e6339&oe=5EC0B763",
+            "subtitle":"MMK : 520 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested. Start Buying Now!",
+                "payload":"sc"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
   else if (payload === 'sc'){
     response ={
       "text" : "Great Choice! Do you want to make appointment for it?"
