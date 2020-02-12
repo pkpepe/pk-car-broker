@@ -1141,7 +1141,30 @@ else if (payload === 'two'){
     }
   }
   }
- 
+  else if (payload === 'n'){
+     response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Hello..Mingalar Par Bya. How can we help you today?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Sell my car",
+            "payload":"one"
+          },
+          {
+            "type":"postback",
+            "title":"Find me a car",
+            "payload":"two"
+         
+          }
+        ]
+      }
+    }
+  }
+  }
   else if (payload === 'yes') {
     response = { "text": "Thanks!" }
   } else if (payload === 'no') {
