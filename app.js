@@ -381,8 +381,31 @@ function handlePostback(sender_psid, received_postback) {
   }
 
 else if (payload === 'one') {
-  response ={
-    "text" : "Please enter you vehicle information below"
+ response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Try the postback button!",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Sell my car",
+            "payload":"one"
+          },
+          {
+            "type":"postback",
+            "title":"Find me a car",
+            "payload":"two"
+          },
+          {
+            "type":"postback",
+            "title":"Trend only",
+            "payload":"three"
+          }
+        ]
+      }
+    }
   }
 }
 
