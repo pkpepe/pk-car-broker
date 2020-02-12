@@ -158,14 +158,14 @@ function handleMessage(sender_psid, received_message) {
     }
     }
   }
-  else if (received_message.text == "hi") {    
+  else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
      response = {
       "text":'Hello..Min Ga Lar Par Shint. What can I help You?'
     }
   }
-  else if (received_message.text == "hello") {
+  else if (received_message.text == "Hello") {
     response = {
       "text":'Hello..Min Ga Lar Par Shint. What can I help You?'
     }
