@@ -757,7 +757,7 @@ else if (payload === 'two'){
     }
   }
   }
-  else if (payload === 'two'){
+  else if (payload === 'sc'){
     response = {
     "attachment":{
       "type":"template",
