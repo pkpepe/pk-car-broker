@@ -177,11 +177,6 @@ function handleMessage(sender_psid, received_message) {
             "type":"postback",
             "title":"Find me a car",
             "payload":"two"
-          },
-          {
-            "type":"postback",
-            "title":"Trend only",
-            "payload":"three"
           }
         ]
       }
