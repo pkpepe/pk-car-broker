@@ -668,7 +668,7 @@ function handleMessage(sender_psid, received_message) {
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
     response = {
-      "text": `You sent the message: "${received_message.text}". Now send me an attachment!`
+      "text": `Vehicle Year`
     }
   } else if (received_message.attachments) {
     // Get the URL of the message attachment
@@ -719,7 +719,7 @@ function handlePostback(sender_psid, received_postback) {
 
 else if (payload === 'one') {
   response ={
-    "text" : "Please enter you vehicle information below", 
+    "text" : "You need to fill vehicle information below", 
      "quick_replies":[
       {
         "content_type":"text",
@@ -731,11 +731,7 @@ else if (payload === 'one') {
 
   }
 }
-else if (payload === 'fill') {
-  response = {
-    "text" : "Vehicle Year"
-  }
-}
+
 else if (payload === 'two'){
     response = {
      "text": "Choose a type of vehicles you are looking for",
