@@ -766,8 +766,8 @@ function handleMessage(sender_psid, received_message) {
      "quick_replies":[
       {
         "content_type":"text",
-        "title":"Fill vehicle info",
-        "payload":"fill"
+        "title":"Do you want to see more",
+        "payload":"oth"
         
       }
     ]
@@ -792,7 +792,30 @@ function handlePostback(sender_psid, received_postback) {
       "text":"Hello! Welcome to PK Car-Broker. Would you please type 'Hi' or 'Hello'"
     }
   }
-
+else if (payload === 'oth'){
+     response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Hello..Mingalar Par Bya. How can we help you today?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Sell my car",
+            "payload":"one"
+          },
+          {
+            "type":"postback",
+            "title":"Find me a car",
+            "payload":"two"
+         
+          }
+        ]
+      }
+    }
+  }
+  }
 else if (payload === 'one') {
   response ={
     "text" : "You need to fill vehicle information below", 
