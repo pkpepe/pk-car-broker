@@ -1128,6 +1128,35 @@ else if (payload === 'two'){
     }
   }
   }
+  else if (payload === 'lc'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Choose Location?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Tea Shop",
+            "payload":"ch"
+          },
+          {
+            "type":"postback",
+            "title":"Car Market Place",
+            "payload":"ch"
+          },
+          {
+            "type":"postback",
+            "title":"Restaurant",
+            "payload":"ch"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
   else if (payload === 'n'){
      response = {
     "attachment":{
