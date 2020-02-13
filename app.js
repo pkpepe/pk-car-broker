@@ -1202,6 +1202,26 @@ else if (payload === 'two'){
     }
   }
   }
+  else if (payload === 'y'){
+    response = {
+     "text": "You can choice as following",
+      "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Date,Time,Ph No",
+        "payload":"dtp"
+        
+      },
+      {
+        "content_type":"text",
+        "title":"Location",
+        "payload":"lc"
+        
+      }
+    ]
+    }
+  }
+
    else if (payload === 'y'){
     response = {
     "attachment":{
