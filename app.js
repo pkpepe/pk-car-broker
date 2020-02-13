@@ -702,70 +702,80 @@ function handleMessage(sender_psid, received_message) {
   }
    else if (received_message.text == "1") {
     response = {
-      "text": "Vehicle Make:",
+      "text": "Vehicle Make:"
      
     }
   }
    else if (received_message.text == "2") {
     response = {
-      "text": "Vehicle Model:",
+      "text": "Vehicle Model:"
      
     }
   }
    else if (received_message.text == "3") {
     response = {
-      "text": "Vehicle Kilo:",
+      "text": "Vehicle Kilo:"
      
     }
   }
    else if (received_message.text == "4") {
     response = {
-      "text": "Vehicle Condition:",
+      "text": "Vehicle Condition:"
      
     }
   }
  else if (received_message.text == "5") {
     response = {
-      "text": "Vehicle Description:",
+      "text": "Vehicle Description:"
      
     }
   }
    else if (received_message.text == "6") {
     response = {
-      "text": "What is the lowest dollar amount you would accept for your vehicle?:",
+      "text": "What is the lowest dollar amount you would accept for your vehicle?:"
      
     }
   }
    else if (received_message.text == "7") {
     response = {
-      "text": "Would you like to upload an image?:",
+      "text": "Would you like to upload an image?:"
      
     }
   }
    else if (received_message.text == "8") {
     response = {
-      "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo.",
+      "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
      
     }
   }
    else if (received_message.text == "9") {
     response = {
-      "text": "Would you like to leave a phone number?",
+      "text": "Would you like to leave a phone number?"
      
     }
   }
    else if (received_message.text == "10") {
     response = {
-      "text": "Please enter your ph no:",
+      "text": "Please enter your ph no:"
      
     }
   }
    else if (received_message.text == "11") {
     response = {
       "text": "Thank you for joining us :). A staff member will contact you within 24 hrs.",
+     "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Fill vehicle info",
+        "payload":"fill"
+        
+      }
+    ]
+
+  }
      
     }
-  }
+  
   // Send the response message
   callSendAPI(sender_psid, response);    
 }
