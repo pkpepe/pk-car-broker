@@ -806,8 +806,26 @@ function handleMessage(sender_psid, received_message) {
       }
     }
   }
-   
-  
+   else if (received_message.text == "Date,Time,Ph No"){
+    response = {
+      "text" : "Date:"
+    }
+   }
+   else if (received_message.text == "2020"){
+    response = {
+      "text" : "Time:"
+    }
+   }
+  else if (received_message.text == "1 pm"){
+    response = {
+      "text" : "Ph No"
+    }
+   }
+   else if (received_message.text == "09"){
+    response = {
+      "text" : "Thank You :)"
+    }
+   }
   // Send the response message
   callSendAPI(sender_psid, response);    
 }
