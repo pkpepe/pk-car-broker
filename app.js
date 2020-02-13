@@ -170,7 +170,30 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
-
+else if (received_message.text === 'y'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"When would you like to do it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Date,Time,Ph No",
+            "payload":"dt"
+          },
+          {
+            "type":"postback",
+            "title":"Location",
+            "payload":"lc"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
     else if (received_message.text === 'Minivans') {
     response = {
     "attachment":{
@@ -796,20 +819,7 @@ function handlePostback(sender_psid, received_postback) {
       "text":"Hello! Welcome to PK Car-Broker. Would you please type 'Hi' or 'Hello'"
     }
   }
-else if (payload === 'dt'){
-   response ={
-    "text" : "You need to fill vehicle information below", 
-     "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Date,Time,Ph No",
-        "payload":"dt"
-        
-      }
-    ]
 
-  }
-}
 else if (payload === 'one') {
   response ={
     "text" : "You need to fill vehicle information below", 
@@ -1215,30 +1225,7 @@ else if (payload === 'two'){
     }
   }
   }
-   else if (payload === 'y'){
-    response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"When would you like to do it?",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Date,Time,Ph No",
-            "payload":"dt"
-          },
-          {
-            "type":"postback",
-            "title":"Location",
-            "payload":"lc"
-          
-          }
-        ]
-      }
-    }
-  }
-  }
+   
  
   else if (payload === 'lc'){
     response = {
