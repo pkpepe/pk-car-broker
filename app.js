@@ -1119,8 +1119,8 @@ else if (payload === 'two'){
           },
           {
             "type":"postback",
-            "title":"I'm flexible",
-            "payload":"fx"
+            "title":"Location",
+            "payload":"lc"
           
           }
         ]
