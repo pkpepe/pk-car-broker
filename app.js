@@ -127,10 +127,7 @@ function handleMessage(sender_psid, received_message) {
   // Checks if the message contains text
    if (received_message.text == "test") {
     response = {
-    {
-  "object": "page",
-  "entry": [
-    {
+     {
       "id": "<PAGE_ID>",
       "time": 1502905976963,
       "messaging": [
@@ -152,10 +149,8 @@ function handleMessage(sender_psid, received_message) {
         }
       ]
     }
-  ]
-}
-}
-}
+    }
+  }
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
