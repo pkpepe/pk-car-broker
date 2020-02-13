@@ -1200,8 +1200,20 @@ else if (payload === 'two'){
   }
   }
   else if (payload === 'yes') {
-    response = { "text": "Thanks!" }
-  } else if (payload === 'no') {
+    response = { 
+      "text": "Thanks!" }
+  }
+  else if (payload === 'help'){
+    response = {
+      "text" : "What can I help you?"
+    }
+  }
+  else if (payload === 'contact'){
+    response = {
+      "text" : "You can contact to 0000009"
+    }
+  }
+   else if (payload === 'no') {
     response = { "text": "Oops, try sending another image." }
   }
   // Send the message to acknowledge the postback
@@ -1273,19 +1285,19 @@ function setupPersistentMenu(res){
                             {
                               "title":"Help",
                               "type":"postback",
-                              "payload":"HELP_PAYLOAD"
+                              "payload":"help"
                             },
                             {
                               "title":"Contact Me",
                               "type":"postback",
-                              "payload":"CONTACT_INFO_PAYLOAD"
+                              "payload":"contact"
                             }
                         ]
                       },
                       {
                         "type":"web_url",
                         "title":"Visit website ",
-                        "url":"https://web.facebook.com/Pk-Car-Broker-101330348122237/?modal=admin_todo_tour",
+                        "url":"http://www.google.com",
                         "webview_height_ratio":"full"
                     }
                 ]
