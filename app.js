@@ -649,11 +649,11 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
-  else if (received_message.text == "ni hao") {    
+  else if (received_message.text == "Thanks") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
     response = {
-      "text": `Hao Xie Xie. Ni Hao Mah!`
+      "text": `Thank you too :)!`
     }
   }
    else if (received_message.text) {    
