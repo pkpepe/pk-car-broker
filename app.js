@@ -760,7 +760,25 @@ function handleMessage(sender_psid, received_message) {
      
     }
   }
-   else if (received_message.text == "11") {
+  else if (received_message.text == "11") {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Where do you want to look?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Location",
+            "payload":"lc"
+          }
+          ]
+        }
+      }
+    }
+  }
+   else if (received_message.text == "12") {
      response = {
     "attachment":{
       "type":"template",
