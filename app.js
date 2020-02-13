@@ -1285,7 +1285,7 @@ function setupPersistentMenu(res){
                       {
                         "type":"web_url",
                         "title":"Visit website ",
-                        "url":"http://www.google.com",
+                        "url":"https://web.facebook.com/Pk-Car-Broker-101330348122237/?modal=admin_todo_tour",
                         "webview_height_ratio":"full"
                     }
                 ]
