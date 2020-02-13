@@ -655,9 +655,6 @@ function handleMessage(sender_psid, received_message) {
     response = {
       "text": `Thank you too :)!`
     }
-    response ={
-      "text" : `Give me your ph no`
-    }
   }
    else if (received_message.text == "Thank you") {    
     // Create the payload for a basic text message, which
@@ -722,6 +719,14 @@ function handlePostback(sender_psid, received_postback) {
 else if (payload === 'one') {
   response ={
     "text" : "Please enter you vehicle information below"
+     "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Fill",
+        "payload":"Fill",
+        "image_url":"http://example.com/img/red.png"
+      }
+    ]
   }
 }
 else if (payload === 'two'){
