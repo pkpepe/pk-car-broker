@@ -654,6 +654,7 @@ function handleMessage(sender_psid, received_message) {
     // will be added to the body of our request to the Send API
     response = {
       "text": `Thank you too :)!`
+      "text": `Thank you too :)!`
     }
   }
    else if (received_message.text == "Thank you") {    
