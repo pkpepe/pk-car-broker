@@ -723,7 +723,7 @@ else if (payload === 'one') {
      "quick_replies":[
       {
         "content_type":"text",
-        "title":"Fill your vehicle information",
+        "title":"Fill vehicle information",
         "payload":"fill",
         "image_url":"http://example.com/img/red.png"
       }
