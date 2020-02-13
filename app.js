@@ -700,67 +700,67 @@ function handleMessage(sender_psid, received_message) {
      
     }
   }
-   else if (received_message.text == "2019") {
+   else if (received_message.text == "1") {
     response = {
       "text": "Vehicle Make:",
      
     }
   }
-   else if (received_message.text == "Toyota") {
+   else if (received_message.text == "2") {
     response = {
       "text": "Vehicle Model:",
      
     }
   }
-   else if (received_message.text == "Wish") {
+   else if (received_message.text == "3") {
     response = {
       "text": "Vehicle Kilo:",
      
     }
   }
-   else if (received_message.text == "32000") {
+   else if (received_message.text == "4") {
     response = {
       "text": "Vehicle Condition:",
      
     }
   }
- else if (received_message.text == "Very Good") {
+ else if (received_message.text == "5") {
     response = {
       "text": "Vehicle Description:",
      
     }
   }
-   else if (received_message.text == "no car accident, outdoor parking, used for family") {
+   else if (received_message.text == "6") {
     response = {
       "text": "What is the lowest dollar amount you would accept for your vehicle?:",
      
     }
   }
-   else if (received_message.text == "MMK : 250 lkh") {
+   else if (received_message.text == "7") {
     response = {
       "text": "Would you like to upload an image?:",
      
     }
   }
-   else if (received_message.text == "Yes") {
+   else if (received_message.text == "8") {
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo.",
      
     }
   }
-   else if (received_message.text == "Photo") {
+   else if (received_message.text == "9") {
     response = {
       "text": "Would you like to leave a phone number?",
      
     }
   }
-   else if (received_message.text == "Yes") {
+   else if (received_message.text == "10") {
     response = {
       "text": "Please enter your ph no:",
      
     }
   }
-   else if (received_message.text == "09") {
+   else if (received_message.text == "11") {
     response = {
       "text": "Thank you, A staff member will contact you within 24 hrs.",
      
