@@ -823,33 +823,21 @@ function handleMessage(sender_psid, received_message) {
    }
    else if (received_message.text == "09"){
     response = {
-      "text" : "Thank You :)"
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Choose Location?",
+        "text":"Thank You. And Where do you want to look?",
         "buttons":[ 
           {
             "type":"postback",
-            "title":"Tea Shop",
-            "payload":"ch"
-          },
-          {
-            "type":"postback",
-            "title":"Car Market Place",
-            "payload":"ch"
-          },
-          {
-            "type":"postback",
-            "title":"Restaurant",
-            "payload":"ch"
-          
+            "title":"Location",
+            "payload":"lc"
           }
-        ]
+          ]
+        }
       }
     }
-  }
     }
    }
   // Send the response message
