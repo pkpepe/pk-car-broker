@@ -1132,11 +1132,6 @@ else if (payload === 'two'){
           },
           {
             "type":"postback",
-            "title":"To Contact",
-            "payload":"ct"
-          },
-          {
-            "type":"postback",
             "title":"Location",
             "payload":"lc"
           
@@ -1146,12 +1141,7 @@ else if (payload === 'two'){
     }
   }
   }
-  else if (payload === 'ct'){
-    response = {
-      "text" : "099874838984"
-
-    }
-  }
+ 
   else if (payload === 'lc'){
     response = {
     "attachment":{
