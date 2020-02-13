@@ -778,24 +778,7 @@ function handleMessage(sender_psid, received_message) {
       }
     }
   }
-   else if (received_message.text == "12") {
-     response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Thank you for joining with Pk Car-Broker. A staff will contact you soon :)",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Do You want to see more?",
-            "payload":"oth"
-          }
-          ]
-        }
-    }
-  }
-}
+   
   
   // Send the response message
   callSendAPI(sender_psid, response);    
@@ -1283,7 +1266,7 @@ else if (payload === 'two'){
         "buttons":[ 
           {
             "type":"postback",
-            "title":"I want to see more",
+            "title":"I want to see agian",
             "payload":"oth"
           }
           ]
