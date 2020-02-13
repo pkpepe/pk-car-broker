@@ -694,7 +694,78 @@ function handleMessage(sender_psid, received_message) {
       }
     }
   } 
-  
+  else if (received_message.text == "Fill vehicle info") {
+    response = {
+      "text": "Vehicle Year:",
+     
+    }
+  }
+   else if (received_message.text == "2019") {
+    response = {
+      "text": "Vehicle Make:",
+     
+    }
+  }
+   else if (received_message.text == "Toyota") {
+    response = {
+      "text": "Vehicle Model:",
+     
+    }
+  }
+   else if (received_message.text == "Wish") {
+    response = {
+      "text": "Vehicle Kilo:",
+     
+    }
+  }
+   else if (received_message.text == "32000") {
+    response = {
+      "text": "Vehicle Condition:",
+     
+    }
+  }
+ else if (received_message.text == "Very Good") {
+    response = {
+      "text": "Vehicle Description:",
+     
+    }
+  }
+   else if (received_message.text == "no car accident, outdoor parking, used for family") {
+    response = {
+      "text": "What is the lowest dollar amount you would accept for your vehicle?:",
+     
+    }
+  }
+   else if (received_message.text == "MMK : 250 lkh") {
+    response = {
+      "text": "Would you like to upload an image?:",
+     
+    }
+  }
+   else if (received_message.text == "Yes") {
+    response = {
+      "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo.",
+     
+    }
+  }
+   else if (received_message.text == "Photo") {
+    response = {
+      "text": "Would you like to leave a phone number?",
+     
+    }
+  }
+   else if (received_message.text == "Yes") {
+    response = {
+      "text": "Please enter your ph no:",
+     
+    }
+  }
+   else if (received_message.text == "09") {
+    response = {
+      "text": "Thank you, A staff member will contact you within 24 hrs.",
+     
+    }
+  }
   // Send the response message
   callSendAPI(sender_psid, response);    
 }
@@ -719,8 +790,8 @@ else if (payload === 'one') {
       {
         "content_type":"text",
         "title":"Fill vehicle info",
-        "payload":"fill",
-        "image_url":"http://example.com/img/red.png"
+        "payload":"fill"
+        
       }
     ]
 
