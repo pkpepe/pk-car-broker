@@ -771,7 +771,7 @@ function handleMessage(sender_psid, received_message) {
           {
             "type":"postback",
             "title":"Do You want to see more?",
-            "payload":"one"
+            "payload":"oth"
           }
           ]
         }
