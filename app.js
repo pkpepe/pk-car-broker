@@ -796,7 +796,20 @@ function handlePostback(sender_psid, received_postback) {
       "text":"Hello! Welcome to PK Car-Broker. Would you please type 'Hi' or 'Hello'"
     }
   }
+else if (payload === 'dt'){
+   response ={
+    "text" : "You need to fill vehicle information below", 
+     "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Date,Time,Ph No",
+        "payload":"dt"
+        
+      }
+    ]
 
+  }
+}
 else if (payload === 'one') {
   response ={
     "text" : "You need to fill vehicle information below", 
@@ -1212,7 +1225,7 @@ else if (payload === 'two'){
         "buttons":[ 
           {
             "type":"postback",
-            "title":"Pick Date and Time",
+            "title":"Date,Time,Ph No",
             "payload":"dt"
           },
           {
