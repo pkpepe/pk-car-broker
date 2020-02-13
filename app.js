@@ -1283,7 +1283,7 @@ else if (payload === 'two'){
         "buttons":[ 
           {
             "type":"postback",
-            "title":"Do You want to see more?",
+            "title":"I want to see more",
             "payload":"oth"
           }
           ]
@@ -1327,6 +1327,11 @@ else if (payload === 'two'){
             "type":"postback",
             "title":"Fine me a car",
             "payload":"two"
+          },
+          {
+            "type":"postback",
+            "title":"Sell my car",
+            "payload":"one"
           }
         ]
       }
