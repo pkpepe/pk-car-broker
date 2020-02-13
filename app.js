@@ -766,7 +766,7 @@ function handleMessage(sender_psid, received_message) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Hello..Mingalar Par Bya. How can we help you today?",
+        "text":"Thank you for joining with Pk Car-Broker. A staff will contact you soon :)",
         "buttons":[ 
           {
             "type":"postback",
