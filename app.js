@@ -668,9 +668,45 @@ function handleMessage(sender_psid, received_message) {
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
     response = {
-      "text": `Vehicle Year`
+      "text": `Vehicle Year:`
     }
-  } else if (received_message.attachments) {
+  } 
+  else if (received_message.text) {    
+    // Create the payload for a basic text message, which
+    // will be added to the body of our request to the Send API
+    response = {
+      "text": `Vehicle Make:`
+    }
+  } 
+  else if (received_message.text) {    
+    // Create the payload for a basic text message, which
+    // will be added to the body of our request to the Send API
+    response = {
+      "text": `Vehicle Model:`
+    }
+  } 
+  else if (received_message.text) {    
+    // Create the payload for a basic text message, which
+    // will be added to the body of our request to the Send API
+    response = {
+      "text": `Vehicle Kilo:`
+    }
+  } 
+  else if (received_message.text) {    
+    // Create the payload for a basic text message, which
+    // will be added to the body of our request to the Send API
+    response = {
+      "text": `Vehicle Condition:`
+    }
+  } 
+  else if (received_message.text) {    
+    // Create the payload for a basic text message, which
+    // will be added to the body of our request to the Send API
+    response = {
+      "text": `Vehicle Descriptions:`
+    }
+  } 
+  else if (received_message.attachments) {
     // Get the URL of the message attachment
     let attachment_url = received_message.attachments[0].payload.url;
     response = {
