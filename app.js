@@ -716,7 +716,7 @@ else if (payload === 'one') {
 }
 else if (payload === 'two'){
     response = {
-     "text": "Pick a color:",
+     "text": "Choose a type of vehicles you are looking for"
       "quick_replies":[
       {
         "content_type":"text",
