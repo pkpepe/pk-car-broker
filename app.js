@@ -1157,6 +1157,11 @@ else if (payload === 'two'){
     }
   }
   }
+  else if (payload === 'ch'){
+    response = {
+    "text" : "Well Done! I've provided the information to our office. One of our sales rep will contact you soon!"
+  }
+  }
   else if (payload === 'n'){
      response = {
     "attachment":{
