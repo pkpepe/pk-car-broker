@@ -169,6 +169,124 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
+
+    else if (payload === 'mini') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"2013 Honda Fit Shuttle",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86171030_102456341342971_5236349205873688576_n.jpg?_nc_cat=110&_nc_eui2=AeGdBiFegBevbDZIyGu26Qc3KzsAcpqTop4NCWUksAqWDi3r7YKSKb6B-Oyq1R6FyzPQmynZQq70AxV5CMCtH028kJrtQiO5BCyKKWhww8LQWQ&_nc_ohc=97aIkwvxUh4AX8Yz77e&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=89ff1b619ffd67704ea2d2809bdd145d&oe=5EB9E396",
+            "subtitle":"MMK : 250 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc1"
+              }              
+            ]      
+          },
+           {
+            "title":"2004 Toyota Wish",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84394208_102497734672165_2684528394506338304_n.jpg?_nc_cat=106&_nc_eui2=AeGMGmlfPWwAp5gBHq21VT1FkcQtaTsDc0yycvz3h59qLeuZV-mThfM7g0ImjAZ63pQoG0QSaYTrsCzDo1DgtPZ52M9UK9IszNiwHQ6_oOLp5A&_nc_ohc=c3beta0dbM8AX95CPhc&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=9e3f27692acf5de198eddf6de0ba8bf9&oe=5ED293FF",
+            "subtitle":"MMK : 220 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.heincarrental.com/vehicles/toyota-wish/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.heincarrental.com/vehicles/toyota-wish/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc2"
+              }              
+            ]      
+          },
+           {
+            "title":"2012 Mitsubishi Colt Plus",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86193222_102511374670801_1688282318990475264_n.jpg?_nc_cat=107&_nc_eui2=AeFFgQH3QZjtFcLjWn3Rjq8yLrJo1TvGCOqpz0BkT2ilQHVgk8tdGKJeIoarRPIHXDeoDc0CspiA9o4r5S6O4Vu8mNBlwD_ENNOpZDJ88vv2LQ&_nc_ohc=BlPQjyzMvJYAX--l25M&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=0a0a2d3b162f8851ff1462cbdcf60f2a&oe=5ED37B21",
+            "subtitle":"MMK : 210 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://blauda.com/idx/25546.html",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://blauda.com/idx/25546.html",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc3"
+              }              
+            ]      
+          },
+          {
+            "title":"2010 Toyota Noah",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84209186_102517074670231_7546471381198700544_n.jpg?_nc_cat=108&_nc_eui2=AeFICcVzim4m44Xkr1MINzq8Jqo7asHuCZxk_aL-El7LuiueSmNq4JJRKeMAAPnUTP58B4T7_bcxZ-gicMvdcVGoVzayDFtdluiMx4lVZVN9zA&_nc_ohc=13BC1bcdKfUAX-fPIre&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=09dcfe4dade2a20997dc0ea6e4f55122&oe=5EB56ACB",
+            "subtitle":"MMK : 240 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc4"
+              }              
+            ]      
+          },
+          {
+            "title":"2005 Volkswagen New Bettle",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84663096_102520038003268_3565139283100565504_n.jpg?_nc_cat=106&_nc_eui2=AeGKcsR5tyDJwoS8vvkGl6rn8_LcH0OkYbNSPZ0GMAT40Ynv3jTF8xeY2urRUl_PczC2v-URviXgPomifWJIMkeW5JsDPxCm8RjnF1makXhZpA&_nc_ohc=0tdY9XY8r7QAX9hiq36&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=e0f5b850f1c4824ca4ced1f3ae98453d&oe=5EC3C5A6",
+            "subtitle":"MMK : 123 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.myanmarcarmarketplace.com/for-sale/volkswagen/volkswagen-new-beetle_i8",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.myanmarcarmarketplace.com/for-sale/volkswagen/volkswagen-new-beetle_i8",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc5"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
   else if (received_message.text == "Hello") {
    
      response = {
@@ -364,150 +482,31 @@ else if (payload === 'one') {
 }
 else if (payload === 'two'){
     response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Choosing a type of vehicle you are looking for",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"SUVs",
-            "payload":"suv"
-          },
-          {
-            "type":"postback",
-            "title":"Sedan",
-            "payload":"sed"
-          },
-          {
-            "type":"postback",
-            "title":"Minivans",
-            "payload":"mini"
-          }
-        ]
+     "text": "Pick a color:",
+      "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"SUVs",
+        "payload":"suv",
+        "image_url":"http://example.com/img/red.png"
+      },
+      {
+        "content_type":"text",
+        "title":"Sedan",
+        "payload":"sedan",
+        "image_url":"http://example.com/img/green.png"
+      },
+       {
+        "content_type":"text",
+        "title":"Minivans",
+        "payload":"mini",
+        "image_url":"http://example.com/img/green.png"
       }
+    ]
     }
-  }
   }
 
-  else if (payload === 'mini') {
-    response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"2013 Honda Fit Shuttle",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86171030_102456341342971_5236349205873688576_n.jpg?_nc_cat=110&_nc_eui2=AeGdBiFegBevbDZIyGu26Qc3KzsAcpqTop4NCWUksAqWDi3r7YKSKb6B-Oyq1R6FyzPQmynZQq70AxV5CMCtH028kJrtQiO5BCyKKWhww8LQWQ&_nc_ohc=97aIkwvxUh4AX8Yz77e&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=89ff1b619ffd67704ea2d2809bdd145d&oe=5EB9E396",
-            "subtitle":"MMK : 250 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc1"
-              }              
-            ]      
-          },
-           {
-            "title":"2004 Toyota Wish",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84394208_102497734672165_2684528394506338304_n.jpg?_nc_cat=106&_nc_eui2=AeGMGmlfPWwAp5gBHq21VT1FkcQtaTsDc0yycvz3h59qLeuZV-mThfM7g0ImjAZ63pQoG0QSaYTrsCzDo1DgtPZ52M9UK9IszNiwHQ6_oOLp5A&_nc_ohc=c3beta0dbM8AX95CPhc&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=9e3f27692acf5de198eddf6de0ba8bf9&oe=5ED293FF",
-            "subtitle":"MMK : 220 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.heincarrental.com/vehicles/toyota-wish/",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.heincarrental.com/vehicles/toyota-wish/",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc2"
-              }              
-            ]      
-          },
-           {
-            "title":"2012 Mitsubishi Colt Plus",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86193222_102511374670801_1688282318990475264_n.jpg?_nc_cat=107&_nc_eui2=AeFFgQH3QZjtFcLjWn3Rjq8yLrJo1TvGCOqpz0BkT2ilQHVgk8tdGKJeIoarRPIHXDeoDc0CspiA9o4r5S6O4Vu8mNBlwD_ENNOpZDJ88vv2LQ&_nc_ohc=BlPQjyzMvJYAX--l25M&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=0a0a2d3b162f8851ff1462cbdcf60f2a&oe=5ED37B21",
-            "subtitle":"MMK : 210 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://blauda.com/idx/25546.html",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://blauda.com/idx/25546.html",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc3"
-              }              
-            ]      
-          },
-          {
-            "title":"2010 Toyota Noah",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84209186_102517074670231_7546471381198700544_n.jpg?_nc_cat=108&_nc_eui2=AeFICcVzim4m44Xkr1MINzq8Jqo7asHuCZxk_aL-El7LuiueSmNq4JJRKeMAAPnUTP58B4T7_bcxZ-gicMvdcVGoVzayDFtdluiMx4lVZVN9zA&_nc_ohc=13BC1bcdKfUAX-fPIre&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=09dcfe4dade2a20997dc0ea6e4f55122&oe=5EB56ACB",
-            "subtitle":"MMK : 240 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc4"
-              }              
-            ]      
-          },
-          {
-            "title":"2005 Volkswagen New Bettle",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84663096_102520038003268_3565139283100565504_n.jpg?_nc_cat=106&_nc_eui2=AeGKcsR5tyDJwoS8vvkGl6rn8_LcH0OkYbNSPZ0GMAT40Ynv3jTF8xeY2urRUl_PczC2v-URviXgPomifWJIMkeW5JsDPxCm8RjnF1makXhZpA&_nc_ohc=0tdY9XY8r7QAX9hiq36&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=e0f5b850f1c4824ca4ced1f3ae98453d&oe=5EC3C5A6",
-            "subtitle":"MMK : 123 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.myanmarcarmarketplace.com/for-sale/volkswagen/volkswagen-new-beetle_i8",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.myanmarcarmarketplace.com/for-sale/volkswagen/volkswagen-new-beetle_i8",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc5"
-              }              
-            ]      
-          }
-        ]
-      }
-    }
-  }
-  }
+
 
   else if (payload === 'suv') {
     response = {
