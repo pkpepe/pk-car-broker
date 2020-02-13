@@ -655,6 +655,9 @@ function handleMessage(sender_psid, received_message) {
     response = {
       "text": `Thank you too :)!`
     }
+    response ={
+      "text" : `Give me your ph no`
+    }
   }
    else if (received_message.text == "Thank you") {    
     // Create the payload for a basic text message, which
