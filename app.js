@@ -287,6 +287,240 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
+  else if (received_message.text === 'Sedan') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"2004 Toyota Mark 2",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/84551911_102583907996881_3474842852742135808_o.jpg?_nc_cat=107&_nc_eui2=AeFTt5P5ACiYEyAX4EreMLH7qWFEaiX7F4DsJl5hR9PrdJXyq46-skymD4lZ6b0CPgC5Y38JSanNxKJBdfDEhwoOpSA1DHRXR1O3TO5uHJjLAg&_nc_ohc=wYOcnPJ3hscAX8gpN2V&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=d9d2a10f59bbcc7c2e1e8cf99476edab&oe=5F037224",
+            "subtitle":"MMK : 250 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc11"
+              }              
+            ]      
+          },
+           {
+            "title":"2004 Toyota Crown",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84676069_102585864663352_1603042813191127040_n.jpg?_nc_cat=105&_nc_eui2=AeHlX8TBzftLr14QHji309b2jWEl-ZQcfv3SZJ_GR8eu8oqouix_BJNdmW1tchonXA1CGEo9C0Q7AFupZQy1Zo0kWX9xk_6zn6LFVWnAg7xq1Q&_nc_ohc=zaqcL9uVb7QAX_NuRdW&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=7a7a70fe72f90ccdd697196f17243169&oe=5EFE6BE9",
+            "subtitle":"MMK : 420 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc12"
+              }              
+            ]      
+          },
+           {
+            "title":"2010 Toyota Camry",
+            "image_url":"https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/84559906_102672461321359_1848718468690477056_n.jpg?_nc_cat=101&_nc_eui2=AeHFkh8fvedCQDqRRwMvBnMmj85Xye1dn3LIR7pYy1E2vNMt-N_aQLB4Fp_UzxceQagtyds1j7Waft59MU4fLdb05UwbNmgbGAnAKWb-7OMSdw&_nc_ohc=lC1Rc2oPh88AX8HShFz&_nc_pt=1&_nc_ht=scontent-sin6-2.xx&oh=fdab058ee41e0a204c11fc46bf1898f6&oe=5EC1D3C8",
+            "subtitle":"MMK : 320 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.japanesecartrade.com/3384635-japan-used-toyota-camry-sedan-car-2010.html",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.japanesecartrade.com/3384635-japan-used-toyota-camry-sedan-car-2010.html",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc13"
+              }              
+            ]      
+          },
+          {
+            "title":"2005 Toyota Mark X",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/86253261_102592601329345_4494208982025502720_o.jpg?_nc_cat=108&_nc_eui2=AeHhuX9sJrYCklnpnO3KQqoaoA4ypLO7gZcBrgXBsxZ_WGyKRHMI8kuwct6qqWa-Zhh4n8tb-ODDPnxmWQRQdYuQ6wccf-Lzc9rN0MEJfHA8YA&_nc_ohc=J7RB3iwcaZwAX83Z5l7&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=5adbe25c9a66f8fc702366bc00d1e784&oe=5EC7F1FE",
+            "subtitle":"MMK : 240 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc14"
+              }              
+            ]      
+          },
+          {
+            "title":"2018 KIA Optima",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84611927_102597167995555_8749900176493117440_n.jpg?_nc_cat=101&_nc_eui2=AeETAIG-mQ1jdW0ARwOImJnU4Ps9YHPQoLUv-oWhX8lbOXU2ddi-vh_JQxS6UOTZsrcTNfVbSQJ9ZpFjyvNXRW7SdYYpKylYVKRdWAKnX2Ykaw&_nc_ohc=uspEaLM2KdgAX_WvESR&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=f9c1fdbc538239841926d0514e4e6339&oe=5EC0B763",
+            "subtitle":"MMK : 560 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc15"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
+   else if (received_message.text === 'SUVs') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"2005 Toyota Harrier",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84501492_102529838002288_7785866037869674496_n.jpg?_nc_cat=104&_nc_eui2=AeECr4wM5QRK-nr2Mg8DzpC9QMaPApvwDcI6Nz0Eo1B0qlgVeLCVCv7uOwtq96bIRaSXFLctzBDEjfQeEIvRf7qAEiUtGxqZCdp9K23qU24UFw&_nc_ohc=CuU9i3fo2fcAX-tcpL6&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=f019efe897280ba54aa900ca817d2e3c&oe=5ED40444",
+            "subtitle":"MMK : 445 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.car-tana.com/detail/61e16398ab9e67ec5a55c8d8b4cda413",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.car-tana.com/detail/61e16398ab9e67ec5a55c8d8b4cda413",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc6"
+              }              
+            ]      
+          },
+           {
+            "title":"2010 Toyota Vanguard",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/85151776_102536018001670_8430566072385536000_n.jpg?_nc_cat=102&_nc_eui2=AeEa2PSUBVeS6OKvntVnjI-jpk7ztg8yac_S7hcAUFRxtkaZO8UkOZ2KZlZvuOkHcLbQIK5vjaFlsVPvrOwKBZPQ-AndlEbZtVUkmip5IrcgiQ&_nc_ohc=AyviV4GkHm8AX_9v63d&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=c9ecd7927c59414c32668a40fb9245e0&oe=5EC550CA",
+            "subtitle":"MMK : 650 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.myanmarcarmarketplace.com/for-sale/toyota/toyota-vanguard_i9",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.myanmarcarmarketplace.com/for-sale/toyota/toyota-vanguard_i9",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc7"
+              }              
+            ]      
+          },
+           {
+            "title":"2006 Toyota Hilux Surf",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84578833_102538674668071_5961625579936546816_n.jpg?_nc_cat=103&_nc_eui2=AeHhJKt_Bk7NvLN5EozksSS7TRezBc-Twpquzk1qOQlyQhmNWZzzEz9ftGa1bZAdIhTHcze5Ep_BGjgjr2aWPsEXgec0huZcjlsgxo0G4BXPkQ&_nc_ohc=nPUd2jBIga8AX-cxlL3&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=b72205fd050f96ec6c9965bb2bbcf1f9&oe=5EFFDABD",
+            "subtitle":"MMK : 225kh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.japanesevehicle-sy.com/2013/01/2001-toyota-hilux-surf-ssr-x-4wd-to.html",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.japanesevehicle-sy.com/2013/01/2001-toyota-hilux-surf-ssr-x-4wd-to.html",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc8"
+              }              
+            ]      
+          },
+          {
+            "title":"2006 Toyota Kluger",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84611929_102540228001249_4904819134107222016_n.jpg?_nc_cat=103&_nc_eui2=AeFKoX9o1_6SY8J3rGLEU_TzFlZZblILEKVu1dGKl1kgbfF00GpbIfyVcuCIf4VwcFYdlWWeHwxq-ro5ZZhIPh5shzCnWsqaqPUjXHZWISIBKA&_nc_ohc=2akem8R6StYAX_oWYeJ&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=61d58855fab3a647b8cf2e46b5c79cb1&oe=5ED5BF5F",
+            "subtitle":"MMK : 520 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.picknbuy24.com/detail/?refno=0120291271",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.picknbuy24.com/detail/?refno=0120291271",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc9"
+              }              
+            ]      
+          },
+          {
+            "title":"2013 Toyota Prado",
+            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86276762_102544041334201_5268035601977835520_n.jpg?_nc_cat=102&_nc_eui2=AeGUC2StGbli_AgXVC2ZQigqPXPTSdQ_Sr8M9GfALPthF8MHIE_n3ndIf8AAInRx92_BiP8226-vU1TyHShNWaEYWCshV1pVEFZfVlq6uGRPPQ&_nc_ohc=8GX1YfOAdAAAX9i3pSy&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=a8a5ed23a2a93ec94c898c125bf1f2a4&oe=5EBF17BE",
+            "subtitle":"MMK : 660 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.mymyancar.com/en/vehicle_listings/ad-toyota-prado-ayeyarwady-import-dubai-1505",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.mymyancar.com/en/vehicle_listings/ad-toyota-prado-ayeyarwady-import-dubai-1505",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc10"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
   else if (received_message.text == "Hello") {
    
      response = {
@@ -508,240 +742,8 @@ else if (payload === 'two'){
 
 
 
-  else if (payload === 'suv') {
-    response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"2005 Toyota Harrier",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84501492_102529838002288_7785866037869674496_n.jpg?_nc_cat=104&_nc_eui2=AeECr4wM5QRK-nr2Mg8DzpC9QMaPApvwDcI6Nz0Eo1B0qlgVeLCVCv7uOwtq96bIRaSXFLctzBDEjfQeEIvRf7qAEiUtGxqZCdp9K23qU24UFw&_nc_ohc=CuU9i3fo2fcAX-tcpL6&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=f019efe897280ba54aa900ca817d2e3c&oe=5ED40444",
-            "subtitle":"MMK : 445 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.car-tana.com/detail/61e16398ab9e67ec5a55c8d8b4cda413",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.car-tana.com/detail/61e16398ab9e67ec5a55c8d8b4cda413",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc6"
-              }              
-            ]      
-          },
-           {
-            "title":"2010 Toyota Vanguard",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/85151776_102536018001670_8430566072385536000_n.jpg?_nc_cat=102&_nc_eui2=AeEa2PSUBVeS6OKvntVnjI-jpk7ztg8yac_S7hcAUFRxtkaZO8UkOZ2KZlZvuOkHcLbQIK5vjaFlsVPvrOwKBZPQ-AndlEbZtVUkmip5IrcgiQ&_nc_ohc=AyviV4GkHm8AX_9v63d&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=c9ecd7927c59414c32668a40fb9245e0&oe=5EC550CA",
-            "subtitle":"MMK : 650 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.myanmarcarmarketplace.com/for-sale/toyota/toyota-vanguard_i9",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.myanmarcarmarketplace.com/for-sale/toyota/toyota-vanguard_i9",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc7"
-              }              
-            ]      
-          },
-           {
-            "title":"2006 Toyota Hilux Surf",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84578833_102538674668071_5961625579936546816_n.jpg?_nc_cat=103&_nc_eui2=AeHhJKt_Bk7NvLN5EozksSS7TRezBc-Twpquzk1qOQlyQhmNWZzzEz9ftGa1bZAdIhTHcze5Ep_BGjgjr2aWPsEXgec0huZcjlsgxo0G4BXPkQ&_nc_ohc=nPUd2jBIga8AX-cxlL3&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=b72205fd050f96ec6c9965bb2bbcf1f9&oe=5EFFDABD",
-            "subtitle":"MMK : 225kh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.japanesevehicle-sy.com/2013/01/2001-toyota-hilux-surf-ssr-x-4wd-to.html",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.japanesevehicle-sy.com/2013/01/2001-toyota-hilux-surf-ssr-x-4wd-to.html",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc8"
-              }              
-            ]      
-          },
-          {
-            "title":"2006 Toyota Kluger",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84611929_102540228001249_4904819134107222016_n.jpg?_nc_cat=103&_nc_eui2=AeFKoX9o1_6SY8J3rGLEU_TzFlZZblILEKVu1dGKl1kgbfF00GpbIfyVcuCIf4VwcFYdlWWeHwxq-ro5ZZhIPh5shzCnWsqaqPUjXHZWISIBKA&_nc_ohc=2akem8R6StYAX_oWYeJ&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=61d58855fab3a647b8cf2e46b5c79cb1&oe=5ED5BF5F",
-            "subtitle":"MMK : 520 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.picknbuy24.com/detail/?refno=0120291271",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.picknbuy24.com/detail/?refno=0120291271",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc9"
-              }              
-            ]      
-          },
-          {
-            "title":"2013 Toyota Prado",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86276762_102544041334201_5268035601977835520_n.jpg?_nc_cat=102&_nc_eui2=AeGUC2StGbli_AgXVC2ZQigqPXPTSdQ_Sr8M9GfALPthF8MHIE_n3ndIf8AAInRx92_BiP8226-vU1TyHShNWaEYWCshV1pVEFZfVlq6uGRPPQ&_nc_ohc=8GX1YfOAdAAAX9i3pSy&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=a8a5ed23a2a93ec94c898c125bf1f2a4&oe=5EBF17BE",
-            "subtitle":"MMK : 660 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.mymyancar.com/en/vehicle_listings/ad-toyota-prado-ayeyarwady-import-dubai-1505",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.mymyancar.com/en/vehicle_listings/ad-toyota-prado-ayeyarwady-import-dubai-1505",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc10"
-              }              
-            ]      
-          }
-        ]
-      }
-    }
-  }
-  }
-    else if (payload === 'sed') {
-    response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-           {
-            "title":"2004 Toyota Mark 2",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/84551911_102583907996881_3474842852742135808_o.jpg?_nc_cat=107&_nc_eui2=AeFTt5P5ACiYEyAX4EreMLH7qWFEaiX7F4DsJl5hR9PrdJXyq46-skymD4lZ6b0CPgC5Y38JSanNxKJBdfDEhwoOpSA1DHRXR1O3TO5uHJjLAg&_nc_ohc=wYOcnPJ3hscAX8gpN2V&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=d9d2a10f59bbcc7c2e1e8cf99476edab&oe=5F037224",
-            "subtitle":"MMK : 250 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc11"
-              }              
-            ]      
-          },
-           {
-            "title":"2004 Toyota Crown",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84676069_102585864663352_1603042813191127040_n.jpg?_nc_cat=105&_nc_eui2=AeHlX8TBzftLr14QHji309b2jWEl-ZQcfv3SZJ_GR8eu8oqouix_BJNdmW1tchonXA1CGEo9C0Q7AFupZQy1Zo0kWX9xk_6zn6LFVWnAg7xq1Q&_nc_ohc=zaqcL9uVb7QAX_NuRdW&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=7a7a70fe72f90ccdd697196f17243169&oe=5EFE6BE9",
-            "subtitle":"MMK : 420 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc12"
-              }              
-            ]      
-          },
-           {
-            "title":"2010 Toyota Camry",
-            "image_url":"https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/84559906_102672461321359_1848718468690477056_n.jpg?_nc_cat=101&_nc_eui2=AeHFkh8fvedCQDqRRwMvBnMmj85Xye1dn3LIR7pYy1E2vNMt-N_aQLB4Fp_UzxceQagtyds1j7Waft59MU4fLdb05UwbNmgbGAnAKWb-7OMSdw&_nc_ohc=lC1Rc2oPh88AX8HShFz&_nc_pt=1&_nc_ht=scontent-sin6-2.xx&oh=fdab058ee41e0a204c11fc46bf1898f6&oe=5EC1D3C8",
-            "subtitle":"MMK : 320 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.japanesecartrade.com/3384635-japan-used-toyota-camry-sedan-car-2010.html",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.japanesecartrade.com/3384635-japan-used-toyota-camry-sedan-car-2010.html",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc13"
-              }              
-            ]      
-          },
-          {
-            "title":"2005 Toyota Mark X",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/p720x720/86253261_102592601329345_4494208982025502720_o.jpg?_nc_cat=108&_nc_eui2=AeHhuX9sJrYCklnpnO3KQqoaoA4ypLO7gZcBrgXBsxZ_WGyKRHMI8kuwct6qqWa-Zhh4n8tb-ODDPnxmWQRQdYuQ6wccf-Lzc9rN0MEJfHA8YA&_nc_ohc=J7RB3iwcaZwAX83Z5l7&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&_nc_tp=6&oh=5adbe25c9a66f8fc702366bc00d1e784&oe=5EC7F1FE",
-            "subtitle":"MMK : 240 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc14"
-              }              
-            ]      
-          },
-          {
-            "title":"2018 KIA Optima",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84611927_102597167995555_8749900176493117440_n.jpg?_nc_cat=101&_nc_eui2=AeETAIG-mQ1jdW0ARwOImJnU4Ps9YHPQoLUv-oWhX8lbOXU2ddi-vh_JQxS6UOTZsrcTNfVbSQJ9ZpFjyvNXRW7SdYYpKylYVKRdWAKnX2Ykaw&_nc_ohc=uspEaLM2KdgAX_WvESR&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=f9c1fdbc538239841926d0514e4e6339&oe=5EC0B763",
-            "subtitle":"MMK : 560 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc15"
-              }              
-            ]      
-          }
-        ]
-      }
-    }
-  }
-  }
+ 
+    
   else if (payload === 'sc1'){
     response = {
     "attachment":{
