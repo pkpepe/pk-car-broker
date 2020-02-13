@@ -170,7 +170,7 @@ function handleMessage(sender_psid, received_message) {
   }
   }
 
-    else if (payload === 'mini') {
+    else if (received_message.text === 'Minivans') {
     response = {
     "attachment":{
       "type":"template",
