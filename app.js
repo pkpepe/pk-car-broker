@@ -823,21 +823,8 @@ function handleMessage(sender_psid, received_message) {
    }
    else if (received_message.text == "09"){
     response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Thank You. And Where do you want to look?",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Location",
-            "payload":"lc"
-          }
-          ]
-        }
-      }
-    }
+      "text" : "Thank You :)"
+
     }
    }
   // Send the response message
@@ -1270,12 +1257,6 @@ else if (payload === 'two'){
         "content_type":"text",
         "title":"Date,Time,Ph No",
         "payload":"dtp"
-        
-      },
-      {
-        "content_type":"text",
-        "title":"Location",
-        "payload":"lc"
         
       }
     ]
