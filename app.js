@@ -766,7 +766,7 @@ function handleMessage(sender_psid, received_message) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Where do you want to look? Would you please choice location?",
+        "text":" Where do you want to look? Would you please choice location?",
         "buttons":[ 
           {
             "type":"postback",
@@ -794,12 +794,12 @@ function handleMessage(sender_psid, received_message) {
     }
    }
    else if (received_message.text == "09"){
-      response = {
+    response = {
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Thank You :) . And Where do you want to look? Would you please choice location?",
+        "text":"Thank You :). And Where do you want to look? Would you please choice location?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1247,7 +1247,35 @@ else if (payload === 'two'){
     }
   }
 
-   
+    else if (payload === 'lc'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Choose Location?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Tea Shop",
+            "payload":"ch"
+          },
+          {
+            "type":"postback",
+            "title":"Car Market Place",
+            "payload":"ch"
+          },
+          {
+            "type":"postback",
+            "title":"Restaurant",
+            "payload":"ch"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
  
   
   else if (payload === 'ch'){
