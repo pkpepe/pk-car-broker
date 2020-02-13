@@ -761,20 +761,23 @@ function handleMessage(sender_psid, received_message) {
     }
   }
    else if (received_message.text == "11") {
-    response = {
-      "text": "Thank you for joining us :). A staff member will contact you within 24 hrs.",
-     "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Do you want to see more",
-        "payload":"oth"
-        
-      }
-    ]
-
-  }
-     
+     response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Hello..Mingalar Par Bya. How can we help you today?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Do You want to see more?",
+            "payload":"one"
+          }
+          ]
+        }
     }
+  }
+}
   
   // Send the response message
   callSendAPI(sender_psid, response);    
