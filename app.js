@@ -127,28 +127,21 @@ function handleMessage(sender_psid, received_message) {
   // Checks if the message contains text
    if (received_message.text == "test") {
     response = {
-     {
-      "id": "<PAGE_ID>",
-      "time": 1502905976963,
-      "messaging": [
-        {
-          "sender": {
-            "id": "1254459154682919"
-          },
-          "recipient": {
-            "id": "682498171943165"
-          },
-          "timestamp": 1502905976377,
-          "message": {
-            "quick_reply": {
-              "payload": "<PHONE_NUMBER>"
-            },
-            "mid": "m_AG5Hz2Uq7tuwNEhXfYYKj8mJEM_QPpz5jdCK48PnKAjSdjfipqxqMvK8ma6AC8fplwlqLP_5cgXIbu7I3rBN0P",
-            "text": "<PHONE_NUMBER>"
-          }
-        }
-      ]
-    }
+      "text": "Pick a color:",
+      "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Red",
+        "payload":"<POSTBACK_PAYLOAD>",
+        "image_url":"http://example.com/img/red.png"
+      },
+      {
+        "content_type":"text",
+        "title":"Green",
+        "payload":"<POSTBACK_PAYLOAD>",
+        "image_url":"http://example.com/img/green.png"
+      }
+    ]
     }
   }
   else if (received_message.text == "Hi") {    
@@ -1166,7 +1159,7 @@ else if (payload === 'two'){
   }
   else if (payload === 'ch'){
     response = {
-    "text" : "Well Done! I've provided the information to our office. One of our sales rep will contact you soon!"
+    "text" : "Well Done! I've provided the information to our office. One of our sales rep will contact you soon"
   }
   }
   else if (payload === 'n'){
