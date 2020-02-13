@@ -1275,7 +1275,20 @@ else if (payload === 'two'){
   }
   else if (payload === 'ch'){
     response = {
-    "text" : "Well Done! I've provided the information to our office. One of our sales rep will contact you soon"
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Thank you for joining with Pk Car-Broker. A staff will contact you soon :)",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Do You want to see more?",
+            "payload":"oth"
+          }
+          ]
+        }
+    }
   }
   }
   else if (payload === 'n'){
