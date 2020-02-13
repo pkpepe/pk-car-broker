@@ -144,23 +144,7 @@ function handleMessage(sender_psid, received_message) {
     ]
     }
   }
-  else if (received_message.text == "fill")
-    response = {
-      "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Hi..Mingalar Par Bya.  How can we help you today?",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Fill",
-            "payload":"fill"
-          }
-        ]
-      }
-    }
-    }
+  else if (received_message.text == "")
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
@@ -736,14 +720,6 @@ function handlePostback(sender_psid, received_postback) {
 else if (payload === 'one') {
   response ={
     "text" : "Please enter you vehicle information below"
-    "quick_replies":[
-      {
-        "content_type":"text",
-        "title":"Fill",
-        "payload":"fill",
-        "image_url":"http://example.com/img/red.png"
-      }
-    ]
 
   }
 }
