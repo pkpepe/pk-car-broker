@@ -1142,35 +1142,34 @@ else if (payload === 'two'){
   }
   }
  
-  else if (payload === 'lc'){
+  else if (payload === 'lc') {
     response = {
     "attachment":{
       "type":"template",
       "payload":{
-        "template_type":"button",
-        "text":"Choose Location?",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Tea Shop",
-            "payload":"ch"
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Choose Location",
+            "image_url":"https://scontent.frgn7-1.fna.fbcdn.net/v/t1.0-9/86391336_103313824590556_3406110035837714432_o.jpg?_nc_cat=107&_nc_eui2=AeHQtTeFrblboj2CfEuoR0y5KMp_FYcSbX7TIsl5vV3WAnCVWEKQq3xvlrGa31tjuyja2jf_dAwRaDzPbeYVjb2NmXiw7scp6zgAaGzT_l8GYg&_nc_ohc=Ldsgh-JIFqkAX_dbDKB&_nc_pt=1&_nc_ht=scontent.frgn7-1.fna&oh=0d8ced5c463ddbd7abe60dd6ecbada6e&oe=5EB87287",
+            "subtitle":"You can choice what you needed",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://web.facebook.com/101330348122237/photos/a.102456394676299/103313821257223/?type=3&av=101330348122237&eav=AfZVLULaUNojstk_gcs9Hm3z-2yfjvcnngUcPS-yir7537UqdYnH76IjAmk6ZTW5mCw&theater",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://web.facebook.com/101330348122237/photos/a.102456394676299/103313821257223/?type=3&av=101330348122237&eav=AfZVLULaUNojstk_gcs9Hm3z-2yfjvcnngUcPS-yir7537UqdYnH76IjAmk6ZTW5mCw&theater",
+                "title":"Tea Shop"
+              },{
+                "type":"postback",
+                "title":"Reastaurants",
+                "payload":"sc6"
+              }              
+            ]      
           },
-          {
-            "type":"postback",
-            "title":"Car Market Place",
-            "payload":"ch"
-          },
-          {
-            "type":"postback",
-            "title":"Restaurant",
-            "payload":"ch"
-          
-          }
-        ]
-      }
-    }
-  }
-  }
   else if (payload === 'ch'){
     response = {
     "text" : "Well Done! I've provided the information to our office. One of our sales rep will contact you soon"
