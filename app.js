@@ -723,12 +723,17 @@ else if (payload === 'one') {
      "quick_replies":[
       {
         "content_type":"text",
-        "title":"Fill vehicle information",
+        "title":"Fill vehicle info",
         "payload":"fill",
         "image_url":"http://example.com/img/red.png"
       }
     ]
 
+  }
+}
+else if (payload === "fill") {
+  response ={
+    "text" : "Vehicle Year"
   }
 }
 else if (payload === 'two'){
