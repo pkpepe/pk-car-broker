@@ -696,7 +696,7 @@ function handleMessage(sender_psid, received_message) {
   } 
   else if (received_message.text == "Fill vehicle info") {
     response = {
-      "text": "Vehicle Year:",
+      "text": "Vehicle Year:"
      
     }
   }
@@ -762,7 +762,7 @@ function handleMessage(sender_psid, received_message) {
   }
    else if (received_message.text == "11") {
     response = {
-      "text": "Thank you, A staff member will contact you within 24 hrs.",
+      "text": "Thank you for joining us :). A staff member will contact you within 24 hrs.",
      
     }
   }
