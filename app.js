@@ -170,7 +170,35 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
-
+  else if (received_message.text === 'Location'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Choose Location?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Tea Shop",
+            "payload":"ch"
+          },
+          {
+            "type":"postback",
+            "title":"Car Market Place",
+            "payload":"ch"
+          },
+          {
+            "type":"postback",
+            "title":"Restaurant",
+            "payload":"ch"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
     else if (received_message.text === 'Minivans') {
     response = {
     "attachment":{
@@ -1222,60 +1250,9 @@ else if (payload === 'two'){
     }
   }
 
-   else if (payload === 'y'){
-    response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"When would you like to do it?",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Date,Time,Ph No",
-            "payload":"dt"
-          },
-          {
-            "type":"postback",
-            "title":"Location",
-            "payload":"lc"
-          
-          }
-        ]
-      }
-    }
-  }
-  }
+   
  
-  else if (payload === 'lc'){
-    response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Choose Location?",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Tea Shop",
-            "payload":"ch"
-          },
-          {
-            "type":"postback",
-            "title":"Car Market Place",
-            "payload":"ch"
-          },
-          {
-            "type":"postback",
-            "title":"Restaurant",
-            "payload":"ch"
-          
-          }
-        ]
-      }
-    }
-  }
-  }
+  
   else if (payload === 'ch'){
     response = {
     "attachment":{
