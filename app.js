@@ -719,7 +719,15 @@ function handlePostback(sender_psid, received_postback) {
 
 else if (payload === 'one') {
   response ={
-    "text" : "Please enter you vehicle information below"
+    "text" : "Please enter you vehicle information below", 
+     "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Fill",
+        "payload":"fill",
+        "image_url":"http://example.com/img/red.png"
+      }
+    ]
 
   }
 }
