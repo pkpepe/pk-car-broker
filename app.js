@@ -1226,7 +1226,35 @@ else if (payload === 'two'){
     }
   }
   }
- 
+ else if (payload === 'lc1'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Choose Location?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Tea Shop",
+            "payload":"ch1"
+          },
+          {
+            "type":"postback",
+            "title":"Car Market Place",
+            "payload":"ch1"
+          },
+          {
+            "type":"postback",
+            "title":"Restaurant",
+            "payload":"ch1"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
   else if (payload === 'lc'){
     response = {
     "attachment":{
@@ -1253,6 +1281,24 @@ else if (payload === 'two'){
           }
         ]
       }
+    }
+  }
+  }
+  else if (payload === 'ch1'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Thank you for joining with Pk Car-Broker. A staff will contact you soon :)",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"I want to see agian",
+            "payload":"oth1"
+          }
+          ]
+        }
     }
   }
   }
@@ -1292,6 +1338,25 @@ else if (payload === 'two'){
             "title":"Find me a car",
             "payload":"two"
          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'oth1'){
+     response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"You can see here!",
+        "buttons":[ 
+          
+          {
+            "type":"postback",
+            "title":"Sell my car",
+            "payload":"one"
           }
         ]
       }
