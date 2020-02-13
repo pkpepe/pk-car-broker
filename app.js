@@ -1290,18 +1290,12 @@ else if (payload === 'two'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"Hello..Mingalar Par Bya. How can we help you today?",
+        "text":"You can see here!",
         "buttons":[ 
           {
             "type":"postback",
-            "title":"Sell my car",
-            "payload":"one"
-          },
-          {
-            "type":"postback",
-            "title":"Find me a car",
+            "title":"Fine me a car",
             "payload":"two"
-         
           }
         ]
       }
