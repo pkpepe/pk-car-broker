@@ -761,7 +761,6 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   else if (received_message.text == "11") {
-   else if (received_message.text == "Date,Time,Ph No"){
     response = {
       "text" : "Date:"
     }
@@ -793,7 +792,7 @@ function handleMessage(sender_psid, received_message) {
         }
       }
     }
-  }
+   }
    else if (received_message.text == "Date,Time,Ph No"){
     response = {
       "text" : "Date:"
