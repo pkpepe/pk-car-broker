@@ -762,20 +762,15 @@ function handleMessage(sender_psid, received_message) {
   }
   else if (received_message.text == "11") {
     response = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":" Where do you want to look? Would you please choice location?",
-        "buttons":[ 
-          {
-            "type":"postback",
-            "title":"Location",
-            "payload":"lc"
-          }
-          ]
-        }
+     "text": "You can choice as following",
+      "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Date,Time,Ph No",
+        "payload":"dtp"
+        
       }
+    ]
     }
   }
    else if (received_message.text == "Date,Time,Ph No"){
