@@ -847,8 +847,8 @@ else if (payload === 'two'){
         "buttons":[ 
           {
             "type":"postback",
-            "title":"You can also be view by car brand",
-            "payload":"one"
+            "title":"You can also be viewed by car brand",
+            "payload":"viewed"
           },
           {
             "type":"postback",
@@ -859,6 +859,37 @@ else if (payload === 'two'){
       }
     }
   }
+  }
+else if (payload === 'viewed'){
+      response = {
+     "text": "Choose a type of vehicles you are looking for",
+      "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Toyota",
+        "payload":"suv",
+        "image_url":"http://example.com/img/red.png"
+      },
+      {
+        "content_type":"text",
+        "title":"Suzuki",
+        "payload":"sedan",
+        "image_url":"http://example.com/img/green.png"
+      },
+       {
+        "content_type":"text",
+        "title":"Mazda",
+        "payload":"mini",
+        "image_url":"http://example.com/img/green.png"
+      }
+      {
+        "content_type":"text",
+        "title":"Nissan",
+        "payload":"mini",
+        "image_url":"http://example.com/img/green.png"
+      }
+    ]
+    }
   }
 
 
