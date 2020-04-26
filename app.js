@@ -837,8 +837,33 @@ else if (payload === 'one') {
 
   }
 }
-
 else if (payload === 'two'){
+      response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"You can choice as folling",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"You can also be view by car brand",
+            "payload":"one"
+          },
+          {
+            "type":"postback",
+            "title":"Available Cars!",
+            "payload":"three"
+          }
+        ]
+      }
+    }
+  }
+  }
+
+
+
+else if (payload === 'three'){
     response = {
      "text": "Choose a type of vehicles you are looking for",
       "quick_replies":[
@@ -863,6 +888,7 @@ else if (payload === 'two'){
     ]
     }
   }
+
 
 
 
