@@ -881,7 +881,7 @@ else if (payload === 'viewed'){
         "title":"Mazda",
         "payload":"mini",
         "image_url":"http://example.com/img/green.png"
-      }
+      },
       {
         "content_type":"text",
         "title":"Nissan",
