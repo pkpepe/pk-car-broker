@@ -477,7 +477,7 @@ function handleMessage(sender_psid, received_message) {
           },
           {
             "title":"2006 Toyota Kluger",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84611929_102540228001249_4904819134107222016_n.jpg?_nc_cat=103&_nc_eui2=AeFKoX9o1_6SY8J3rGLEU_TzFlZZblILEKVu1dGKl1kgbfF00GpbIfyVcuCIf4VwcFYdlWWeHwxq-ro5ZZhIPh5shzCnWsqaqPUjXHZWISIBKA&_nc_ohc=2akem8R6StYAX_oWYeJ&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=61d58855fab3a647b8cf2e46b5c79cb1&oe=5ED5BF5F",
+            "image_url":"https://www.facebook.com/101330348122237/photos/a.102456394676299/102540224667916/?type=3&theater",
             "subtitle":"MMK : 520 lkh",
             "default_action": {
               "type": "web_url",
