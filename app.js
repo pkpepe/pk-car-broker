@@ -347,7 +347,7 @@ function handleMessage(sender_psid, received_message) {
               "webview_height_ratio": "tall",
             },
             "buttons":[
-              {https://i.imgur.com/wC4NWd8.jpg
+              {
                 "type":"web_url",
                 "url":"https://www.japanesecartrade.com/3384635-japan-used-toyota-camry-sedan-car-2010.html",
                 "title":"More Information"
