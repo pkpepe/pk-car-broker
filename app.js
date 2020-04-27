@@ -221,18 +221,18 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
            {
-            "title":"2012 Mitsubishi Colt Plus",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86193222_102511374670801_1688282318990475264_n.jpg?_nc_cat=107&_nc_eui2=AeFFgQH3QZjtFcLjWn3Rjq8yLrJo1TvGCOqpz0BkT2ilQHVgk8tdGKJeIoarRPIHXDeoDc0CspiA9o4r5S6O4Vu8mNBlwD_ENNOpZDJ88vv2LQ&_nc_ohc=BlPQjyzMvJYAX--l25M&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=0a0a2d3b162f8851ff1462cbdcf60f2a&oe=5ED37B21",
-            "subtitle":"MMK : 210 lkh",
+            "title":"2010 Dihatsu Cool",
+            "image_url":"https://i.imgur.com/1BXIlSq.jpg",
+            "subtitle":"MMK : 165 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://blauda.com/idx/25546.html",
+              "url": "https://www.facebook.com/101330348122237/posts/140523607536244/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://blauda.com/idx/25546.html",
+                "url":"https://www.facebook.com/101330348122237/posts/140523607536244/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -244,7 +244,7 @@ function handleMessage(sender_psid, received_message) {
           {
             "title":"2007 Toyota Ractics",
             "image_url":"https://i.imgur.com/SKVAE3s.jpg",
-            "subtitle":"MMK : 240 lkh",
+            "subtitle":"MMK : 170 lkh",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/101330348122237/posts/140520600869878/",
@@ -317,18 +317,18 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
            {
-            "title":"2004 Toyota Crown",
-            "image_url":"https://i.imgur.com/GkzHSuJ.jpg",
+            "title":"Nissan Cedric 2001",
+            "image_url":"https://i.imgur.com/zz18si2.jpg",
             "subtitle":"MMK : 420 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+              "url": "https://www.facebook.com/101330348122237/posts/140526790869259/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.japanesecartrade.com/2766078-japan-used-toyota-crown-sedan-car-2004.html",
+                "url":"https://www.facebook.com/101330348122237/posts/140526790869259/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -979,7 +979,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2012 Mitsubishi Colt Plus. Great Choice. Do you want to make appointment for it?",
+        "text":"2010 Dihatsu Cool. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1195,7 +1195,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2004 Toyota Crown. Great Choice. Do you want to make appointment for it?",
+        "text":"2001 Nissan Cedric. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
