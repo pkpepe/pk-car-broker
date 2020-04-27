@@ -296,18 +296,18 @@ function handleMessage(sender_psid, received_message) {
         "template_type":"generic",
         "elements":[
            {
-            "title":"2004 Toyota Mark 2",
-            "image_url":"https://i.imgur.com/CQJXmeD.jpg",
+            "title":"Toyota Mark 2,2000model,2.0cc, Regalia",
+            "image_url":"https://i.imgur.com/edMypcb.jpg",
             "subtitle":"MMK : 250 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+              "url": "https://www.facebook.com/101330348122237/posts/140544484200823/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-ii-2004-in-japan-car-auction-uss-yokohama/",
+                "url":"https://www.facebook.com/101330348122237/posts/140544484200823/",
                 "title":"More Information"
               },{
                 "type":"postback",
