@@ -358,10 +358,10 @@ function handleMessage(sender_psid, received_message) {
               }              
             ]      
           },
-          {
+           {
             "title":"wedding photo",
             "image_url":"https://scontent.fmdl2-1.fna.fbcdn.net/v/t1.0-0/s600x600/94335130_141568377408294_6689828793823002624_n.jpg?_nc_cat=100&_nc_sid=8bfeb9&_nc_eui2=AeGzzUthzEUPQ4_8r0-jJ6ZQFXof09ZS_zYVeh_T1lL_Nib5JttX8K93210rOHTNKKVmki7zX7D08ey4_pGTDIFz&_nc_ohc=q_AHGKhdRkMAX8Aiczj&_nc_ht=scontent.fmdl2-1.fna&_nc_tp=7&oh=b6ec042734345691b0d96bcd0a231144&oe=5ECA9DAC",
-            "subtitle":"M",
+            "subtitle":"M ",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/110838683814597/posts/141568527408279/?d=n",
