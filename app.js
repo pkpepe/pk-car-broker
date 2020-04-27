@@ -242,18 +242,18 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
-            "title":"2010 Toyota Noah",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84209186_102517074670231_7546471381198700544_n.jpg?_nc_cat=108&_nc_eui2=AeFICcVzim4m44Xkr1MINzq8Jqo7asHuCZxk_aL-El7LuiueSmNq4JJRKeMAAPnUTP58B4T7_bcxZ-gicMvdcVGoVzayDFtdluiMx4lVZVN9zA&_nc_ohc=13BC1bcdKfUAX-fPIre&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=09dcfe4dade2a20997dc0ea6e4f55122&oe=5EB56ACB",
+            "title":"2007 Toyota Ractics",
+            "image_url":"https://i.imgur.com/SKVAE3s.jpg",
             "subtitle":"MMK : 240 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
+              "url": "https://www.facebook.com/101330348122237/posts/140520600869878/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.aajapancars.com/Stock/136916-TOYOTA-NOAH-ZRR70-0351776",
+                "url":"https://www.facebook.com/101330348122237/posts/140520600869878/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -1003,7 +1003,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2010 Toyota Noah. Great Choice. Do you want to make appointment for it?",
+        "text":"2007 Toyota Ractics. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1027,7 +1027,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2005 Volkswagen New Bettle. Great Choice. Do you want to make appointment for it?",
+        "text":"2008 Honda Fit. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
