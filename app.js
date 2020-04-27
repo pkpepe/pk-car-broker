@@ -364,7 +364,7 @@ function handleMessage(sender_psid, received_message) {
             "subtitle":"M ",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.facebook.com/110838683814597/posts/141568527408279/?d=n",
+              "url": "",
               "webview_height_ratio": "tall",
             },
             "buttons":[
