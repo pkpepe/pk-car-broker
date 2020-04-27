@@ -181,7 +181,7 @@ function handleMessage(sender_psid, received_message) {
            {
             "title":"Misubishi Delica D2,1.3cc,2wd",
             "image_url":"https://i.imgur.com/gbKFTc8.jpg",
-            "subtitle":"MMK : 250 lkh",
+            "subtitle":"MMK : 167 lkh",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/101330348122237/posts/140612220860716/",
