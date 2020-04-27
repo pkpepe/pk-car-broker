@@ -359,23 +359,23 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
-            "title":"2005 Toyota Mark X",
-            "image_url":"https://i.imgur.com/oiW6H93.jpg",
-            "subtitle":"MMK : 240 lkh",
+            "title":"wedding photo",
+            "image_url":"https://i.imgur.com/0azLEeH.jpg",
+            "subtitle":"M ",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
+              "url": "https://www.facebook.com/110838683814597/posts/141568527408279/?d=n",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.usedcarsmyanmar.com/used-toyota-mark-x-2008-in-japan-car-auction-uss-kyushu/",
-                "title":"More Information"
+                "url":"",
+                "title":"wedding photo"
               },{
                 "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc14"
+                "title":"wedding photo",
+                "payload":"sc7"
               }              
             ]      
           },
