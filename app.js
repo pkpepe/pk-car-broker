@@ -339,7 +339,7 @@ function handleMessage(sender_psid, received_message) {
           },
            {
             "title":"2010 Toyota Camry",
-            "image_url":"https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/84559906_102672461321359_1848718468690477056_n.jpg?_nc_cat=101&_nc_eui2=AeHFkh8fvedCQDqRRwMvBnMmj85Xye1dn3LIR7pYy1E2vNMt-N_aQLB4Fp_UzxceQagtyds1j7Waft59MU4fLdb05UwbNmgbGAnAKWb-7OMSdw&_nc_ohc=lC1Rc2oPh88AX8HShFz&_nc_pt=1&_nc_ht=scontent-sin6-2.xx&oh=fdab058ee41e0a204c11fc46bf1898f6&oe=5EC1D3C8",
+            "image_url":"https://i.imgur.com/wC4NWd8.jpg",
             "subtitle":"MMK : 320 lkh",
             "default_action": {
               "type": "web_url",
@@ -347,7 +347,7 @@ function handleMessage(sender_psid, received_message) {
               "webview_height_ratio": "tall",
             },
             "buttons":[
-              {
+              {https://i.imgur.com/wC4NWd8.jpg
                 "type":"web_url",
                 "url":"https://www.japanesecartrade.com/3384635-japan-used-toyota-camry-sedan-car-2010.html",
                 "title":"More Information"
