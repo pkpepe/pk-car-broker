@@ -200,18 +200,18 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
            {
-            "title":"2004 Toyota Wish",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/84394208_102497734672165_2684528394506338304_n.jpg?_nc_cat=106&_nc_eui2=AeGMGmlfPWwAp5gBHq21VT1FkcQtaTsDc0yycvz3h59qLeuZV-mThfM7g0ImjAZ63pQoG0QSaYTrsCzDo1DgtPZ52M9UK9IszNiwHQ6_oOLp5A&_nc_ohc=c3beta0dbM8AX95CPhc&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=9e3f27692acf5de198eddf6de0ba8bf9&oe=5ED293FF",
+            "title":"2010 Misubishi Colt Plus",
+            "image_url":"https://i.imgur.com/evfqDfU.jpg",
             "subtitle":"MMK : 220 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.heincarrental.com/vehicles/toyota-wish/",
+              "url": "https://www.facebook.com/101330348122237/posts/140530477535557/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.heincarrental.com/vehicles/toyota-wish/",
+                "url":"https://www.facebook.com/101330348122237/posts/140530477535557/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -955,7 +955,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2004 Toyota Wish. Great Choice. Do you want to make appointment for it?",
+        "text":"2010 Misubishi Colt Plus. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
