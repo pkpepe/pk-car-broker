@@ -179,18 +179,18 @@ function handleMessage(sender_psid, received_message) {
         "template_type":"generic",
         "elements":[
            {
-            "title":"2013 Honda Fit Shuttle",
-            "image_url":"https://scontent.fmdl4-2.fna.fbcdn.net/v/t1.0-9/86171030_102456341342971_5236349205873688576_n.jpg?_nc_cat=110&_nc_eui2=AeGdBiFegBevbDZIyGu26Qc3KzsAcpqTop4NCWUksAqWDi3r7YKSKb6B-Oyq1R6FyzPQmynZQq70AxV5CMCtH028kJrtQiO5BCyKKWhww8LQWQ&_nc_ohc=97aIkwvxUh4AX8Yz77e&_nc_pt=1&_nc_ht=scontent.fmdl4-2.fna&oh=89ff1b619ffd67704ea2d2809bdd145d&oe=5EB9E396",
+            "title":"Misubishi Delica D2,1.3cc,2wd",
+            "image_url":"https://i.imgur.com/gbKFTc8.jpg",
             "subtitle":"MMK : 250 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
+              "url": "https://www.facebook.com/101330348122237/posts/140612220860716/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.everycar.jp/detail.php?make=honda&model=fit-shuttle&id=725721",
+                "url":"https://www.facebook.com/101330348122237/posts/140612220860716/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -202,7 +202,7 @@ function handleMessage(sender_psid, received_message) {
            {
             "title":"2010 Misubishi Colt Plus",
             "image_url":"https://i.imgur.com/evfqDfU.jpg",
-            "subtitle":"MMK : 220 lkh",
+            "subtitle":"MMK : 155 lkh",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/101330348122237/posts/140530477535557/",
@@ -931,7 +931,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2013 Honda Fit Shuttle. Great Choice. Do you want to make appointment for it?",
+        "text":"Misubishi Delica. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
