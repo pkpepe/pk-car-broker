@@ -391,7 +391,7 @@ function handleMessage(sender_psid, received_message) {
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.autobidmaster.com/en/carfinder-online-auto-auctions/lot/61228969/COPART_2018_KIA_OPTIMA_EX_SALVAGE_VEHICLE_TITLE_FT_WORTH_TX/",
+                "url":"https://i.imgur.com/EN0V7W7.jpg",
                 "title":"More Information"
               },{
                 "type":"postback",
