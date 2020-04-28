@@ -522,6 +522,39 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
+  else if (received_message.text === 'PickUp') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Misubishi Minicab",
+            "image_url":"https://i.imgur.com/RR4JwzK.jpg",
+            "subtitle":"MMK : 110 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140806450841293/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140806450841293/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc6"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
   else if (received_message.text == "Hello") {
    
      response = {
@@ -915,7 +948,14 @@ else if (payload === 'three'){
         "title":"Minivans",
         "payload":"mini",
         "image_url":"http://example.com/img/green.png"
+      },
+        {
+        "content_type":"text",
+        "title":"PickUp",
+        "payload":"pick",
+        "image_url":"http://example.com/img/green.png"
       }
+
     ]
     }
   }
