@@ -401,18 +401,18 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
-            "title":"2018 KIA Optima",
-            "image_url":"https://i.imgur.com/EN0V7W7.jpg",
+            "title":"Honda Insight 2009",
+            "image_url":"https://i.imgur.com/ykHdyGd.jpg",
             "subtitle":"MMK : 560 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://i.imgur.com/EN0V7W7.jpg",
+              "url": "https://www.facebook.com/101330348122237/posts/140847464170525/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://i.imgur.com/EN0V7W7.jpg",
+                "url":"https://www.facebook.com/101330348122237/posts/140847464170525/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -1328,7 +1328,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2011 Suzuki Swift. Great Choice. Do you want to make appointment for it?",
+        "text":"2012 Suzuki Swift. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1352,7 +1352,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2018 KIA Optima. Great Choice. Do you want to make appointment for it?",
+        "text":"Honda Insight 2009. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
