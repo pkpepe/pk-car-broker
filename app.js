@@ -403,7 +403,7 @@ function handleMessage(sender_psid, received_message) {
           {
             "title":"Honda Insight 2009",
             "image_url":"https://i.imgur.com/ykHdyGd.jpg",
-            "subtitle":"MMK : 560 lkh",
+            "subtitle":"MMK : 176 lkh",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/101330348122237/posts/140847464170525/",
@@ -567,7 +567,28 @@ function handleMessage(sender_psid, received_message) {
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc6"
+                "payload":"sc17"
+              }              
+            ]      
+          },
+          {
+            "title":"Subaru samber 2008",
+            "image_url":"https://i.imgur.com/Ik7ue1a.jpg",
+            "subtitle":"MMK : 110 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140849497503655/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140849497503655/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc18"
               }              
             ]      
           }
@@ -1281,6 +1302,54 @@ else if (payload === 'three'){
       "payload":{
         "template_type":"button",
         "text":"Toyota Brevis 2001. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc17'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Misubishi Minicab. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+   else if (payload === 'sc18'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Subaru samber 2008. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
