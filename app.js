@@ -263,6 +263,27 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
+            "title":"2012 Suzuki Swift",
+            "image_url":"https://i.imgur.com/BBocmu5.jpg",
+            "subtitle":"MMK : 170 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140844540837484/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140844540837484/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc16"
+              }              
+            ]      
+          },
+          {
             "title":"2008 Honda Fit",
             "image_url":"https://i.imgur.com/pPU86Il.jpg",
             "subtitle":"MMK : 188 lkh",
@@ -1211,7 +1232,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2004 Toyota Mark 2. Great Choice. Do you want to make appointment for it?",
+        "text":"Toyota Mark 2. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1259,7 +1280,7 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2010 Toyota Camry. Great Choice. Do you want to make appointment for it?",
+        "text":"Toyota Brevis 2001. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
@@ -1283,7 +1304,30 @@ else if (payload === 'three'){
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"2005 Toyota Mark X. Great Choice. Do you want to make appointment for it?",
+        "text":"Toyota Belta 2009. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+   else if (payload === 'sc16'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"2011 Suzuki Swift. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
