@@ -1321,6 +1321,7 @@ else if (payload === 'three'){
       }
     }
   }
+}
    else if (payload === 'sc16'){
     response = {
     "attachment":{
