@@ -170,7 +170,188 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
- 
+ else if (received_message.text === 'Toyota') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"Toyota Mark 2,2000model,2.0cc, Regalia",
+            "image_url":"https://i.imgur.com/edMypcb.jpg",
+            "subtitle":"MMK : 250 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140544484200823/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140544484200823/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc11"
+              }              
+            ]      
+          },
+           
+           {
+            "title":"Toyota Brevis 2001,3.0cc",
+            "image_url":"https://i.imgur.com/0azLEeH.jpg",
+            "subtitle":"MMK : 320 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140619837526621/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140619837526621/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc13"
+              }              
+            ]      
+          },
+          {
+            "title":"Toyota Belta 2009",
+            "image_url":"https://i.imgur.com/ZHWuIbz.jpg",
+            "subtitle":"MMK : 220 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140841997504405/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140841997504405/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc14"
+              }              
+            ]      
+          },
+         {
+            "title":"2007 Toyota Ractics",
+            "image_url":"https://i.imgur.com/SKVAE3s.jpg",
+            "subtitle":"MMK : 170 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140520600869878/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140520600869878/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc4"
+              }              
+            ]      
+          },
+          {
+            "title":"Toyota Hilux surf 1999 SSR G",
+            "image_url":"https://i.imgur.com/nRdG4yP.jpg",
+            "subtitle":"MMK : 385 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/141094117479193/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/141094117479193/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc20"
+              }              
+            ]      
+          },
+           {
+            "title":"Toyota Parado 1997,TX package",
+            "image_url":"https://i.imgur.com/5w6mtdH.jpg",
+            "subtitle":"MMK : 150 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/141097234145548/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/141097234145548/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc21"
+              }              
+            ]      
+          },
+          {
+            "title":"2004 late Toyota Hilux Surf",
+            "image_url":"https://i.imgur.com/lD8nB8I.jpg",
+            "subtitle":"MMK : 430 kh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/141108330811105/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/141108330811105/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc23"
+              }              
+            ]      
+          },
+          {
+            "title":"Toyota Harrier 1999 G Package",
+            "image_url":"https://i.imgur.com/9FTJXr1.jpg",
+            "subtitle":"MMK : 180 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/141104947478110/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/141104947478110/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc22"
+              }              
+            ]      
+          }
+         
+        ]
+      }
+    }
+  }
+  }
     else if (received_message.text === 'Minivans') {
     response = {
     "attachment":{
@@ -455,7 +636,7 @@ function handleMessage(sender_psid, received_message) {
         "template_type":"generic",
         "elements":[
            {
-            "title":"Hilux surf 1999 SSR G",
+            "title":"Toyota Hilux surf 1999 SSR G",
             "image_url":"https://i.imgur.com/nRdG4yP.jpg",
             "subtitle":"MMK : 385 lkh",
             "default_action": {
@@ -476,7 +657,7 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
            {
-            "title":"Parado 1997,TX package",
+            "title":"Toyota Parado 1997,TX package",
             "image_url":"https://i.imgur.com/5w6mtdH.jpg",
             "subtitle":"MMK : 150 lkh",
             "default_action": {
@@ -518,7 +699,7 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
-            "title":"Harrier 1999 G Package",
+            "title":"Toyota Harrier 1999 G Package",
             "image_url":"https://i.imgur.com/9FTJXr1.jpg",
             "subtitle":"MMK : 180 lkh",
             "default_action": {
@@ -943,13 +1124,13 @@ else if (payload === 'viewed'){
       {
         "content_type":"text",
         "title":"Toyota",
-        "payload":"suv",
+        "payload":"toyo",
         "image_url":"http://example.com/img/red.png"
       },
       {
         "content_type":"text",
         "title":"Suzuki",
-        "payload":"sedan",
+        "payload":"suzu",
         "image_url":"http://example.com/img/green.png"
       },
        {
