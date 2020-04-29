@@ -476,23 +476,23 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
            {
-            "title":"2010 Toyota Vanguard",
-            "image_url":"https://i.imgur.com/c47p6KQ.jpg",
+            "title":"Parado 1997,TX package",
+            "image_url":"https://i.imgur.com/5w6mtdH.jpg",
             "subtitle":"MMK : 650 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.myanmarcarmarketplace.com/for-sale/toyota/toyota-vanguard_i9",
+              "url": "https://www.facebook.com/101330348122237/posts/141097234145548/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.myanmarcarmarketplace.com/for-sale/toyota/toyota-vanguard_i9",
+                "url":"https://www.facebook.com/101330348122237/posts/141097234145548/",
                 "title":"More Information"
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc7"
+                "payload":"sc21"
               }              
             ]      
           },
@@ -518,18 +518,18 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
-            "title":"2006 Toyota Kluger",
-            "image_url":"https://i.imgur.com/NGSFtkn.jpg",
+            "title":"Harrier 1999",
+            "image_url":"https://i.imgur.com/9FTJXr1.jpg",
             "subtitle":"MMK : 520 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.picknbuy24.com/detail/?refno=0120291271",
+              "url": "https://www.facebook.com/101330348122237/posts/141104947478110/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.picknbuy24.com/detail/?refno=0120291271",
+                "url":"https://www.facebook.com/101330348122237/posts/141104947478110/",
                 "title":"More Information"
               },{
                 "type":"postback",
@@ -1419,6 +1419,54 @@ else if (payload === 'three'){
       "payload":{
         "template_type":"button",
         "text":"Hilux surf 1999 SSR G. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc21'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Parado 1997,TX package. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc22'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Harrier 1999, G package. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
