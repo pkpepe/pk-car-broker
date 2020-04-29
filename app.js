@@ -455,23 +455,23 @@ function handleMessage(sender_psid, received_message) {
         "template_type":"generic",
         "elements":[
            {
-            "title":"2005 Toyota Harrier",
-            "image_url":"https://i.imgur.com/oHKi1uv.jpg",
-            "subtitle":"MMK : 445 lkh",
+            "title":"Hilux surf 1999 SSR G",
+            "image_url":"https://i.imgur.com/nRdG4yP.jpg",
+            "subtitle":"MMK : 385 lkh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.car-tana.com/detail/61e16398ab9e67ec5a55c8d8b4cda413",
+              "url": "https://www.facebook.com/101330348122237/posts/141094117479193/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.car-tana.com/detail/61e16398ab9e67ec5a55c8d8b4cda413",
+                "url":"https://www.facebook.com/101330348122237/posts/141094117479193/",
                 "title":"More Information"
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc6"
+                "payload":"sc20"
               }              
             ]      
           },
@@ -1395,6 +1395,30 @@ else if (payload === 'three'){
       "payload":{
         "template_type":"button",
         "text":"Nissan Sunny 2009. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+   else if (payload === 'sc20'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Hilux surf 1999 SSR G. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
