@@ -478,7 +478,7 @@ function handleMessage(sender_psid, received_message) {
            {
             "title":"Parado 1997,TX package",
             "image_url":"https://i.imgur.com/5w6mtdH.jpg",
-            "subtitle":"MMK : 650 lkh",
+            "subtitle":"MMK : 150 lkh",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/101330348122237/posts/141097234145548/",
@@ -518,7 +518,7 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
-            "title":"Harrier 1999 G package",
+            "title":"Harrier 1999 G Package",
             "image_url":"https://i.imgur.com/9FTJXr1.jpg",
             "subtitle":"MMK : 180 lkh",
             "default_action": {
