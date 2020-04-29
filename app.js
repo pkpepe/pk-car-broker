@@ -352,6 +352,255 @@ function handleMessage(sender_psid, received_message) {
     }
   }
   }
+   else if (received_message.text === 'Suzuki') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"2012 Suzuki Swift",
+            "image_url":"https://i.imgur.com/BBocmu5.jpg",
+            "subtitle":"MMK : 170 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140844540837484/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140844540837484/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc16"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (received_message.text === 'Honda') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+           {
+            "title":"2008 Honda Fit",
+            "image_url":"https://i.imgur.com/pPU86Il.jpg",
+            "subtitle":"MMK : 188 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140497514205520/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140497514205520/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc5"
+              }              
+            ]      
+          },
+          {
+            "title":"Honda Insight 2009",
+            "image_url":"https://i.imgur.com/ykHdyGd.jpg",
+            "subtitle":"MMK : 176 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140847464170525/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140847464170525/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc15"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
+   else if (received_message.text === 'Mitsubishi') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+            {
+            "title":"2010 Misubishi Colt Plus",
+            "image_url":"https://i.imgur.com/evfqDfU.jpg",
+            "subtitle":"MMK : 155 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140530477535557/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140530477535557/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc2"
+              }              
+            ]      
+          },
+           {
+            "title":"Misubishi Delica D2,1.3cc,2wd",
+            "image_url":"https://i.imgur.com/gbKFTc8.jpg",
+            "subtitle":"MMK : 167 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140612220860716/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140612220860716/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc1"
+              }              
+            ]      
+          },
+           {
+            "title":"Misubishi Minicab",
+            "image_url":"https://i.imgur.com/RR4JwzK.jpgs",
+            "subtitle":"MMK : 110 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140806450841293/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140806450841293/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc17"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (received_message.text === 'Dihatsu') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+             {
+            "title":"2010 Dihatsu Cool",
+            "image_url":"https://i.imgur.com/1BXIlSq.jpg",
+            "subtitle":"MMK : 165 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140523607536244/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140523607536244/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc3"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (received_message.text === 'Nissan') {
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"generic",
+        "elements":[
+             {
+            "title":"Nissan Cedric 2001",
+            "image_url":"https://i.imgur.com/zz18si2.jpg",
+            "subtitle":"MMK : 420 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/140526790869259/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/140526790869259/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc12"
+              }              
+            ]      
+          },
+          {
+            "title":"Nissan Sunny 2009",
+            "image_url":"https://i.imgur.com/vFNZvGg.jpg",
+            "subtitle":"MMK : 230 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/141087177479887/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/141087177479887/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc19"
+              }              
+            ]      
+          }
+        ]
+      }
+    }
+  }
+  }
     else if (received_message.text === 'Minivans') {
     response = {
     "attachment":{
