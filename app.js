@@ -574,7 +574,7 @@ function handleMessage(sender_psid, received_message) {
           {
             "title":"Subaru samber 2008",
             "image_url":"https://i.imgur.com/Ik7ue1a.jpg",
-            "subtitle":"MMK : 110 lkh",
+            "subtitle":"MMK : 107 lkh",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/101330348122237/posts/140849497503655/",
