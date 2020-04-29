@@ -358,6 +358,27 @@ function handleMessage(sender_psid, received_message) {
               }              
             ]      
           },
+          {
+            "title":"Nissan Sunny 2009",
+            "image_url":"https://i.imgur.com/vFNZvGg.jpg",
+            "subtitle":"MMK : 230 lkh",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://www.facebook.com/101330348122237/posts/141087177479887/",
+              "webview_height_ratio": "tall",
+            },
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.facebook.com/101330348122237/posts/141087177479887/",
+                "title":"More Information"
+              },{
+                "type":"postback",
+                "title":"Yes, I'm interested",
+                "payload":"sc19"
+              }              
+            ]      
+          },
            {
             "title":"Toyota Brevis 2001,3.0cc",
             "image_url":"https://i.imgur.com/0azLEeH.jpg",
@@ -1350,6 +1371,30 @@ else if (payload === 'three'){
       "payload":{
         "template_type":"button",
         "text":"Subaru samber 2008. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc19'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Nissan Sunny 2009. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
