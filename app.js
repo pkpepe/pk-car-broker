@@ -923,7 +923,7 @@ else if (payload === 'two'){
         "buttons":[ 
           {
             "type":"postback",
-            "title":"You can also be viewed by car brand",
+            "title":"Car Brands",
             "payload":"viewed"
           },
           {
@@ -954,8 +954,20 @@ else if (payload === 'viewed'){
       },
        {
         "content_type":"text",
-        "title":"Mazda",
-        "payload":"mini",
+        "title":"Honda",
+        "payload":"honda",
+        "image_url":"http://example.com/img/green.png"
+      },
+      {
+        "content_type":"text",
+        "title":"Mitsubishi",
+        "payload":"mit",
+        "image_url":"http://example.com/img/green.png"
+      },
+      {
+        "content_type":"text",
+        "title":"Dihatsu",
+        "payload":"dih",
         "image_url":"http://example.com/img/green.png"
       },
       {
