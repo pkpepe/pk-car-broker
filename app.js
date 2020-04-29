@@ -518,7 +518,7 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
           {
-            "title":"Harrier 1999",
+            "title":"Harrier 1999 G package",
             "image_url":"https://i.imgur.com/9FTJXr1.jpg",
             "subtitle":"MMK : 180 lkh",
             "default_action": {
