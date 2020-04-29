@@ -497,30 +497,30 @@ function handleMessage(sender_psid, received_message) {
             ]      
           },
            {
-            "title":"2006 Toyota Hilux Surf",
-            "image_url":"https://i.imgur.com/dvCAKLE.jpg",
-            "subtitle":"MMK : 225kh",
+            "title":"2004 late Toyota Hilux Surf",
+            "image_url":"https://i.imgur.com/lD8nB8I.jpg",
+            "subtitle":"MMK : 430 kh",
             "default_action": {
               "type": "web_url",
-              "url": "https://www.japanesevehicle-sy.com/2013/01/2001-toyota-hilux-surf-ssr-x-4wd-to.html",
+              "url": "https://www.facebook.com/101330348122237/posts/141108330811105/",
               "webview_height_ratio": "tall",
             },
             "buttons":[
               {
                 "type":"web_url",
-                "url":"https://www.japanesevehicle-sy.com/2013/01/2001-toyota-hilux-surf-ssr-x-4wd-to.html",
+                "url":"https://www.facebook.com/101330348122237/posts/141108330811105/",
                 "title":"More Information"
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc8"
+                "payload":"sc23"
               }              
             ]      
           },
           {
             "title":"Harrier 1999",
             "image_url":"https://i.imgur.com/9FTJXr1.jpg",
-            "subtitle":"MMK : 520 lkh",
+            "subtitle":"MMK : 180 lkh",
             "default_action": {
               "type": "web_url",
               "url": "https://www.facebook.com/101330348122237/posts/141104947478110/",
@@ -534,31 +534,11 @@ function handleMessage(sender_psid, received_message) {
               },{
                 "type":"postback",
                 "title":"Yes, I'm interested",
-                "payload":"sc9"
-              }              
-            ]      
-          },
-          {
-            "title":"2013 Toyota Prado",
-            "image_url":"https://i.imgur.com/E2lRwPH.jpg",
-            "subtitle":"MMK : 660 lkh",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://www.mymyancar.com/en/vehicle_listings/ad-toyota-prado-ayeyarwady-import-dubai-1505",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.mymyancar.com/en/vehicle_listings/ad-toyota-prado-ayeyarwady-import-dubai-1505",
-                "title":"More Information"
-              },{
-                "type":"postback",
-                "title":"Yes, I'm interested",
-                "payload":"sc10"
+                "payload":"sc22"
               }              
             ]      
           }
+         
         ]
       }
     }
@@ -1467,6 +1447,30 @@ else if (payload === 'three'){
       "payload":{
         "template_type":"button",
         "text":"Harrier 1999, G package. Great Choice. Do you want to make appointment for it?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Yes",
+            "payload":"y"
+          },
+          {
+            "type":"postback",
+            "title":"No",
+            "payload":"n"
+          
+          }
+        ]
+      }
+    }
+  }
+  }
+  else if (payload === 'sc23'){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"2004 late Toyota Hilux Surf. Great Choice. Do you want to make appointment for it?",
         "buttons":[ 
           {
             "type":"postback",
