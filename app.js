@@ -103,7 +103,7 @@ app.get('/webhook', (req, res) => {
 
 
  let reqdtp ={
-    reqday:false,
+    reqday:false
   };
   let user_say ={};
   // Check if a token and mode were sent
