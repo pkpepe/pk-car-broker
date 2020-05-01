@@ -147,6 +147,20 @@ function handleMessage(sender_psid, received_message) {
     ]
     }
   }
+else if (received_message.text == "Date,Time,Ph No") {
+    response = {
+     "text": "Which day do you want to see?"
+    }
+    reqdtp.reqday = true;
+  }
+
+  else if (received_message.text && reqdtp.reqday == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Choose Time"
+    }
+    reqdtp.reqday = false;
+  }
 
 
 
@@ -1284,21 +1298,7 @@ function handleMessage(sender_psid, received_message) {
     ]
     }
   }
-  else if (received_message.text == "Date,Time,Ph No") {
-    response = {
-     "text": "Which day do you want to see?"
-    }
-    reqdtp.reqday = true;
-  }
-
-  else if (received_message.text && reqdtp.reqday == true){
-    user_say.reqday = received_message.text;
-    response = {
-      "text": "Choose Time"
-    }
-    reqdtp.reqday = false;
-  }
-
+  
   // Send the response message
   callSendAPI(sender_psid, response);    
 }
