@@ -123,7 +123,7 @@ app.get('/webhook', (req, res) => {
 let reqdtp ={
     reqday:false,
     reqtime:false,
-
+    reqlocatin:false,
   };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
@@ -171,6 +171,14 @@ else if (received_message.text && reqdtp.reqtime == true){
       "text": "Give me your phone number"
     }
     reqdtp.reqtime = false;
+    reqdtp.reqlocatin = true;
+  }
+else if (received_message.text && reqdtp.reqlocatin == true){
+    user_say.reqtime = received_message.text;
+    response = {
+      "text": "Where do you want to look the car?"
+    }
+    reqdtp.reqlocatin= false;
   }
 
 
