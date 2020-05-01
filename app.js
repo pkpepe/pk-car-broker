@@ -120,9 +120,7 @@ app.get('/webhook', (req, res) => {
     }
   }
 });
-var make = {
-  dtp:false;
-}
+
 function handleMessage(sender_psid, received_message) {
   let response;
   
@@ -146,19 +144,7 @@ function handleMessage(sender_psid, received_message) {
     ]
     }
   }
-else if(received_message.text && make.dtp===true){
-  response = {
-    "text": "Choose Time"
-  }
-  make.dtp = false;
-}
-else if (received_message.text === "Date") {
-  response = {
-    "text": "Which day do you want to see?"
-  }
-  make.dtp = true;
 
-}
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
@@ -1293,7 +1279,39 @@ else if (received_message.text === "Date") {
     ]
     }
   }
-  
+   else if (received_message.text == "Date,Time,Ph No"){
+    response = {
+      "text" : "Date:"
+    }
+   }
+   else if (received_message.text == "2020"){
+    response = {
+      "text" : "Time:"
+    }
+   }
+  else if (received_message.text == "1 pm"){
+    response = {
+      "text" : "Ph No"
+    }
+   }
+   else if (received_message.text == "09"){
+    response = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Thank You :). And Where do you want to look? Would you please choice location?",
+        "buttons":[ 
+          {
+            "type":"postback",
+            "title":"Location",
+            "payload":"lc"
+          }
+          ]
+        }
+      }
+    }
+   }
   // Send the response message
   callSendAPI(sender_psid, response);    
 }
