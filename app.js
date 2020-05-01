@@ -176,7 +176,7 @@ else if (received_message.text && reqdtp.reqtime == true){
 else if (received_message.text && reqdtp.reqlocatin == true){
     user_say.reqtime = received_message.text;
     response = {
-      "text": "Where do you want to look the car?"
+      "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
     reqdtp.reqlocatin= false;
   }
