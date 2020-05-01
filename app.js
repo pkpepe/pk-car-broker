@@ -122,6 +122,8 @@ app.get('/webhook', (req, res) => {
 });
 let reqdtp ={
     reqday:false,
+    reqtime:false,
+
   };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
@@ -160,8 +162,16 @@ else if (received_message.text == "Date,Time,Ph No") {
       "text": "Choose Time"
     }
     reqdtp.reqday = false;
+    reqdtp.reqtime = true;
   }
 
+else if (received_message.text && reqdtp.reqtime == true){
+    user_say.reqtime = received_message.text;
+    response = {
+      "text": "Give me your phone number"
+    }
+    reqdtp.reqtime = false;
+  }
 
 
   else if (received_message.text == "Hi") {    
