@@ -101,8 +101,14 @@ app.get('/webhook', (req, res) => {
   let token = req.query['hub.verify_token'];
   let challenge = req.query['hub.challenge'];
 
-  
-    
+  let car = {
+    day: false,
+    time: false,
+    ph_no: false,
+  }
+    let user_say = {
+
+    };
   // Check if a token and mode were sent
   if (mode && token) {
     
@@ -1279,7 +1285,13 @@ function handleMessage(sender_psid, received_message) {
     ]
     }
   }
- 
+  else if (received_message.text && car.day == true) {
+    user_say.day = received_message.text;
+    response = {
+     "text": "Whic day do you want to see?"
+  }
+  car.day = false;
+ }
   // Send the response message
   callSendAPI(sender_psid, response);    
 }
@@ -1982,6 +1994,7 @@ else if (payload === 'three'){
       }
     ]
     }
+    car.day = true;
   }
 
     else if (payload === 'lc'){
