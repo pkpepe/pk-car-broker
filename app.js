@@ -190,19 +190,21 @@ else if (received_message.text && reqdtp.reqthank == true){
     }
     reqdtp.reqthank= false;
   }
+
+
  else if (received_message.text == "Fill vehicle info") {
     response = {
       "text": "Vehicle Year:"
      }
      reqdtp.reqinfo = true;
   }
+  
   else if (received_message.text && reqdtp.reqinfo == true){
     user_say.reqday = received_message.text;
     response = {
       "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
     }
     reqdtp.reqinfo = false;
-    
   }
   
   else if (received_message.text == "Hi") {    
