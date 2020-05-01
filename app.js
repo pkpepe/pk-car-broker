@@ -126,6 +126,12 @@ let reqdtp ={
     reqlocatin:false,
     reqthank:false,
     reqinfo:false,
+    reqmodel:false,
+    reqkilo:false,
+    reqcondition:false,
+    reqdescri:false,
+    reqcost:false,
+    reqimg:false,
   };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
@@ -198,15 +204,71 @@ else if (received_message.text && reqdtp.reqthank == true){
      }
      reqdtp.reqinfo = true;
   }
-  
+
   else if (received_message.text && reqdtp.reqinfo == true){
     user_say.reqday = received_message.text;
     response = {
       "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
     }
     reqdtp.reqinfo = false;
+    reqdtp.reqmodel = true;
   }
+  else if (received_message.text && reqdtp.reqmodel == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Vehicle Model (Eg: Vehical Name)"
+    }
+    reqdtp.reqmodel = false;
+    reqdtp.reqkilo = true;
+  }
+   else if (received_message.text && reqdtp.reqkilo == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Vehicle Kilo (Eg: May be 0 Kilo to 200000 Kilo)"
+    }
+    reqdtp.reqkilo = false;
+    reqdtp.reqcondition = true;
+  }
+   else if (received_message.text && reqdtp.reqcondition == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Vehicle Condition (Eg: Good or Bad)"
+    }
+    reqdtp.reqcondition = false;
+    reqdtp.reqdescri = true;
+  }
+ else if (received_message.text && reqdtp.reqdescri == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Vehicle Description"
+    }
+    reqdtp.reqdescri = false;
+    reqdtp.reqcost = true;
+  }
+ else if (received_message.text && reqdtp.reqcost == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "How much do you expect this car to cost?"
+    }
+    reqdtp.reqcost = false;
+    reqdtp.reqimg = true;
+  }
+   else if (received_message.text && reqdtp.reqimg == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
+    }
+    reqdtp.reqimg = false;
+    reqdtp.reqtime = true;
+  }
+   else if (received_message.text && reqdtp.reqtime == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Would you like to leave a phone number?"
+    }
+    reqdtp.reqtime = false;
   
+  }
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
