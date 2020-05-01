@@ -132,6 +132,7 @@ let reqdtp ={
     reqdescri:false,
     reqcost:false,
     reqimg:false,
+    reqph:false,
   };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
@@ -176,7 +177,7 @@ else if (received_message.text == "Date,Time,Ph No") {
 else if (received_message.text && reqdtp.reqtime == true){
     user_say.reqtime = received_message.text;
     response = {
-      "text": "Give me your phone number"
+      "text": "Would you like to leave a phone number"
     }
     reqdtp.reqtime = false;
     reqdtp.reqlocatin = true;
@@ -261,6 +262,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqimg = false;
     reqdtp.reqtime = true;
   }
+   
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
