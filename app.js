@@ -101,7 +101,6 @@ app.get('/webhook', (req, res) => {
   let token = req.query['hub.verify_token'];
   let challenge = req.query['hub.challenge'];
 
- 
 
   // Check if a token and mode were sent
   if (mode && token) {
@@ -1281,7 +1280,7 @@ function handleMessage(sender_psid, received_message) {
   }
   
   // Send the response message
-  callSendAPI(sender_psid, response);   
+  callSendAPI(sender_psid, response);    
 }
 
 function handlePostback(sender_psid, received_postback) {
