@@ -152,7 +152,7 @@ function handleMessage(sender_psid, received_message) {
   }
 else if (received_message.text == "Date,Time,Ph No") {
     response = {
-     "text": "Which day do you want to see?"
+     "text": "Which day do you want to see? (Eg: Mon,Tue,Wed,Thurs,Fri,Sat,Sun)"
     }
     reqdtp.reqday = true;
   }
@@ -160,7 +160,7 @@ else if (received_message.text == "Date,Time,Ph No") {
   else if (received_message.text && reqdtp.reqday == true){
     user_say.reqday = received_message.text;
     response = {
-      "text": "Choose Time"
+      "text": "Choose Time. (PS :You can viewd within 9 am to 5pm.)"
     }
     reqdtp.reqday = false;
     reqdtp.reqtime = true;
