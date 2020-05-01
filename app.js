@@ -153,7 +153,8 @@ else if (received_message.text == "Date,Time,Ph No") {
     }
     reqdtp.reqday = true;
   }
-  else if (received_message.text && reqdtp.reqday = true){
+
+  else if (received_message.text && reqdtp.reqday == true){
     user_say.reqday = received_message.text;
     response = {
       "text": "Choose Time"
