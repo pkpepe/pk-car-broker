@@ -125,6 +125,7 @@ let reqdtp ={
     reqtime:false,
     reqlocatin:false,
     reqthank:false,
+    reqinfo:false,
   };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
@@ -160,7 +161,7 @@ else if (received_message.text == "Date,Time,Ph No") {
   else if (received_message.text && reqdtp.reqday == true){
     user_say.reqday = received_message.text;
     response = {
-      "text": "Choose Time. (PS :You can viewd within 9 am to 5pm.)"
+      "text": "Choose Time. (PS :You can viewd within 9 am to 5 pm.)"
     }
     reqdtp.reqday = false;
     reqdtp.reqtime = true;
@@ -189,7 +190,21 @@ else if (received_message.text && reqdtp.reqthank == true){
     }
     reqdtp.reqthank= false;
   }
-
+ else if (received_message.text == "Fill vehicle info") {
+    response = {
+      "text": "Vehicle Year:"
+     }
+     reqdtp.reqinfo = true;
+  }
+  else if (received_message.text && reqdtp.reqinfo == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
+    }
+    reqdtp.reqinfo = false;
+    
+  }
+  
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
