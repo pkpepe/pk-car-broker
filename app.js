@@ -124,6 +124,7 @@ let reqdtp ={
     reqday:false,
     reqtime:false,
     reqlocatin:false,
+    reqthank:false,
   };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
@@ -179,8 +180,15 @@ else if (received_message.text && reqdtp.reqlocatin == true){
       "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
     reqdtp.reqlocatin= false;
+    reqdtp.reqthank= true;
   }
-
+else if (received_message.text && reqdtp.reqthank == true){
+    user_say.reqtime = received_message.text;
+    response = {
+      "text": "Thank you for visiting and supporting PK Car Broker. I will contact you soon. Have a nice day :)"
+    }
+    reqdtp.reqthank= false;
+  }
 
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
