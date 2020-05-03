@@ -255,7 +255,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqimg = true;
   }
    else if (received_message.text && reqdtp.reqimg == true){
-    user_say.reqday = received_message.text;
+    user_say.reqday = received_message.attachments;
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
