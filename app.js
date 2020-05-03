@@ -133,8 +133,7 @@ let reqdtp ={
     reqcost:false,
     reqimg:false,
     reqph:false,
-    reqattach:false,
-    
+
   };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
@@ -256,14 +255,26 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqimg = true;
   }
    else if (received_message.text && reqdtp.reqimg == true){
-    user_say.reqday = received_message.attachments;
+    user_say.reqday = received_message.text;
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
     reqdtp.reqimg = false;
-    reqdtp.reqtime = true;
   }
-   
+   else if (received_message.text == "Phone") {
+    response = {
+      "text": "Type you phone number"
+     }
+     reqdtp.reqph =true;
+  }
+  else if (received_message.text && reqdtp.reqph == true){
+    user_say.reqday = received_message.text;
+    response = {
+      "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
+    }
+    reqdtp.reqph = false;
+    reqdtp.reqthank = true;
+  }
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
     // will be added to the body of our request to the Send API
@@ -1306,7 +1317,7 @@ else if (received_message.text && reqdtp.reqthank == true){
               {
                 "type": "postback",
                 "title": "Yes!",
-                "payload": "yes",
+                "payload": "ok",
               },
               {
                 "type": "postback",
@@ -1318,7 +1329,7 @@ else if (received_message.text && reqdtp.reqthank == true){
         }
       }
     }
-    reqdtp.reqattach=false;
+
   } 
   
   
@@ -2122,9 +2133,22 @@ else if (payload === 'three'){
     }
   }
   }
-  else if (payload === 'yes') {
-    response = { "text": "Thanks!" }
-  } else if (payload === 'no') {
+  else if (payload === 'ok') {
+  response ={
+    "text" : "Would you like to please leave a phone number", 
+     "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"Phone",
+        "payload":"phones"
+        
+      }
+    ]
+
+  }
+}
+
+  else if (payload === 'no') {
     response = { "text": "Oops, try sending another image." }
   }
   // Send the message to acknowledge the postback
