@@ -133,6 +133,7 @@ let reqdtp ={
     reqcost:false,
     reqimg:false,
     reqph:false,
+    reqattach:false,
     
   };
   let user_say ={};
@@ -1317,6 +1318,7 @@ else if (received_message.text && reqdtp.reqthank == true){
         }
       }
     }
+    reqdtp.reqattach=false;
   } 
   
   
