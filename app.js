@@ -263,7 +263,7 @@ else if (received_message.text && reqdtp.reqthank == true){
   }
    else if (received_message.text == "Phone") {
     response = {
-      "text": "Type you phone number"
+      "text": "Type your phone number"
      }
      reqdtp.reqph =true;
   }
