@@ -202,7 +202,7 @@ else if (received_message.text && reqdtp.reqtime == true){
       "text": "Would you like to leave a phone number"
     }
     reqdtp.reqtime = false;
-    reqdtp.reqlocatin = true;
+    reqdtp.reqphone = true;
   }
 else if (received_message.text && reqdtp.reqphone == true){
     user_say.reqphone = received_message.text;
