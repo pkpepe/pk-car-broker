@@ -148,6 +148,17 @@ let reqdtp ={
   };
   let user_say ={};
 
+
+let vcinfo ={
+  reqyear:false,
+  reqmake:false,
+  reqmodel:false,
+  reqkilo:false,
+  reqcondition:false,
+  reqdescri:false,
+  reqcost:false,
+}
+let uservcinfo ={};
 function handleMessage(sender_psid, received_message) {
   let response;
   
@@ -217,59 +228,60 @@ else if (received_message.text && reqdtp.reqlocation == true){
     response = {
       "text": "Vehicle Year:"
      }
-     reqdtp.reqyear = true;
+     vcinfo.reqyear = true;
   }
 
-  else if (received_message.text && reqdtp.reqyear == true){
-    user_say.reqyear = received_message.text;
+  else if (received_message.text && vcinfo.reqyear == true){
+    uservcinfo.reqyear = received_message.text;
     response = {
       "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
     }
-    reqdtp.reqyear = false;
-    reqdtp.reqmake = true;
+    vcinfo.reqyear = false;
+    vcinfo.reqmake = true;
   }
-  else if (received_message.text && reqdtp.reqmake == true){
-    user_say.reqmake = received_message.text;
+  else if (received_message.text && vcinfo.reqmake == true){
+    uservcinfo.reqmake = received_message.text;
     response = {
       "text": "Vehicle Model (Eg: Vehical Name)"
     }
-    reqdtp.reqmake = false;
-    reqdtp.reqmodel = true;
+    vcinfo.reqmake = false;
+    vcinfo.reqmodel = true;
   }
-   else if (received_message.text && reqdtp.reqmodel == true){
-    user_say.reqmodel = received_message.text;
+   else if (received_message.text && vcinfo.reqmodel == true){
+    uservcinfo.reqmodel = received_message.text;
     response = {
       "text": "Vehicle Kilo (Eg: May be 0 Kilo to 200000 Kilo)"
     }
-    reqdtp.reqmodel = false;
-    reqdtp.reqkilo = true;
+    vcinfo.reqmodel = false;
+    vcinfo.reqkilo = true;
   }
-   else if (received_message.text && reqdtp.reqkilo == true){
-    user_say.reqkilo = received_message.text;
+   else if (received_message.text && vcinfo.reqkilo == true){
+    uservcinfo.reqkilo = received_message.text;
     response = {
       "text": "Vehicle Condition (Eg: Good or Bad)"
     }
-    reqdtp.reqkilo = false;
-    reqdtp.reqcondition = true;
+    vcinfo.reqkilo = false;
+    vcinfo.reqcondition = true;
   }
- else if (received_message.text && reqdtp.reqcondition == true){
-    user_say.reqcondition = received_message.text;
+ else if (received_message.text && vcinfo.reqcondition == true){
+    uservcinfo.reqcondition = received_message.text;
     response = {
       "text": "Vehicle Description"
     }
-    reqdtp.reqcondition = false;
-    reqdtp.reqdescri = true;
+    vcinfo.reqcondition = false;
+    vcinfo.reqdescri = true;
   }
- else if (received_message.text && reqdtp.reqdescri == true){
-    user_say.reqdescri = received_message.text;
+ else if (received_message.text && vcinfo.reqdescri == true){
+    uservcinfo.reqdescri = received_message.text;
     response = {
       "text": "How much do you expect this car to cost?"
     }
-    reqdtp.reqdescri = false;
-    reqdtp.reqcost = true;
+    vcinfo.reqdescri = false;
+    vcinfo.reqcost = true;
   }
-   else if (received_message.text && reqdtp.reqcost == true){
+   else if (received_message.text && vcinfo.reqcost == true){
     user_say.reqcost = received_message.text;
+    saveData_cost(sender_psid);
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
@@ -2323,3 +2335,20 @@ function saveData_thank_u(sender_psid) {
   }
   db.collection('pkpk').add(user_say);
 }
+
+
+function saveData_cost(sender_psid) {
+  const vechicle = {
+    id : sender_psid,
+   reqyear : uservcinfo.reqyear,
+   reqmake: uservcinfo.reqmake,
+   reqkilo : uservcinfo.reqkilo,
+   reqcondition : uservcinfo.reqcondition,
+   reqdescri : uservcinfo.reqdescri,
+   reqcost : uservcinfo.reqcost,
+   
+  }
+  db.collection('kwi').add(uservcinfo);
+}
+
+
