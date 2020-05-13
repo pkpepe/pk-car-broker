@@ -161,6 +161,11 @@ let vcinfo ={
 let uservcinfo ={};
 
 
+let vcdetail ={
+  reqph:false,
+  reqlocation1:false,
+};
+let userdetail={};
 
 function handleMessage(sender_psid, received_message) {
   let response;
@@ -294,23 +299,24 @@ else if (received_message.text && reqdtp.reqlocation == true){
     response = {
       "text": "Type your phone number"
      }
-     reqdtp.reqph =true;
+     vcdetail.reqph =true;
   }
-  else if (received_message.text && reqdtp.reqph == true){
-    user_say.reqph = received_message.text;
+  else if (received_message.text && vcdetail.reqph == true){
+    userdetail.reqph = received_message.text;
     response = {
       "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
-    reqdtp.reqph = false;
-    reqdtp.reqlocation1 = true;
+    vcdetail.reqph = false;
+    vcdetail.reqlocation1 = true;
 
   }
-  else if (received_message.text && reqdtp.reqlocation1 == true){
-    user_say.reqlocation1 = received_message.text;
+  else if (received_message.text && vcdetail.reqlocation1 == true){
+    userdetail.reqlocation1 = received_message.text;
+    saveData_detail(sender_psid);
     response = {
       "text": "Thank you for visiting and supporting PK Car Broker. I will contact you soon. Have a nice day :)"
     }
-    reqdtp.reqlocation1 = false;
+    vcdetail.reqlocation1 = false;
 
   }
   else if (received_message.text == "Hi") {    
@@ -2354,4 +2360,12 @@ function saveData_cost(sender_psid) {
   db.collection('kwi').add(uservcinfo);
 }
 
+function saveData_detail(sender_psid) {
+  const det = {
+    id : sender_psid,
+  reqph : userdetail.reqph,
+  reqlocation1 : userdetail.reqlocation1
+  }
+  db.collection('data').add(userdetail);
+}
 
