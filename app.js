@@ -2317,8 +2317,8 @@ function saveData_thank_u(sender_psid) {
     id : sender_psid,
    reqday : user_say.reqday,
    reqtime: user_say.reqtime,
-   reqdlocation : user_say.reqlocatin,
    reqphone : user_say.reqphone,
+   reqdlocation : user_say.reqlocatin,
    
   }
   db.collection('pkpk').add(user_say);
