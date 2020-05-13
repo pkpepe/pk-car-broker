@@ -27,7 +27,11 @@ const
   request = require('request'),
   express = require('express'),
   body_parser = require('body-parser'),
-  app = express().use(body_parser.json());
+  firebase = require('firebase-admin');
+
+  const app = express();
+  app.use(body_parser.json());
+  app.use(body_parser.urlencoded());
 
 
   firebase.initializeApp({
