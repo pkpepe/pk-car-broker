@@ -146,7 +146,7 @@ let reqdtp ={
     reqimg:false,
     reqph:false,
 
-  }
+  };
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
   let response;
