@@ -157,8 +157,6 @@ let vcinfo ={
   reqcondition:false,
   reqdescri:false,
   reqcost:false,
- 
-
 }
 let uservcinfo ={};
 
@@ -294,7 +292,6 @@ else if (received_message.text && reqdtp.reqlocation == true){
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
     vcinfo.reqcost = false;
-
   }
    else if (received_message.text == "Phone") {
     response = {
@@ -2188,7 +2185,6 @@ else if (payload === 'three'){
         
       }
     ]
-
 
   }
 }
