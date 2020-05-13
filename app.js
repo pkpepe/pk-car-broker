@@ -147,17 +147,7 @@ let reqdtp ={
    
   };
   let user_say ={};
- 
- let vehicleInfo ={
-  reqyear = false,
-  reqmake = false,
-  reqmodel = false,
-  reqkilo = false,
-  reqcondition = false,
-  reqdescri = false,
-  reqcost = false,
- };
- let user_ans = {};
+
 function handleMessage(sender_psid, received_message) {
   let response;
   
@@ -227,64 +217,63 @@ else if (received_message.text && reqdtp.reqlocation == true){
     response = {
       "text": "Vehicle Year:"
      }
-     vehicleInfo.reqyear = true;
+     reqdtp.reqyear = true;
   }
 
-  else if (received_message.text && vehicleInfo.reqyear == true){
-    user_ans.reqyear = received_message.text;
+  else if (received_message.text && reqdtp.reqyear == true){
+    user_say.reqyear = received_message.text;
     response = {
       "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
     }
-    vehicleInfo.reqyear = false;
-    vehicleInfo.reqmake = true;
+    reqdtp.reqyear = false;
+    reqdtp.reqmake = true;
   }
-  else if (received_message.text && vehicleInfo.reqmake == true){
-    user_ans.reqmake = received_message.text;
+  else if (received_message.text && reqdtp.reqmake == true){
+    user_say.reqmake = received_message.text;
     response = {
-      "text": "Vehicle Model (Eg: Vehicle Name)"
+      "text": "Vehicle Model (Eg: Vehical Name)"
     }
-    vehicleInfo.reqmake = false;
-    vehicleInfo.reqmodel = true;
+    reqdtp.reqmake = false;
+    reqdtp.reqmodel = true;
   }
-   else if (received_message.text && vehicleInfo.reqmodel == true){
-    user_ans.reqmodel = received_message.text;
+   else if (received_message.text && reqdtp.reqmodel == true){
+    user_say.reqmodel = received_message.text;
     response = {
       "text": "Vehicle Kilo (Eg: May be 0 Kilo to 200000 Kilo)"
     }
-    vehicleInfo.reqmodel = false;
-    vehicleInfo.reqkilo = true;
+    reqdtp.reqmodel = false;
+    reqdtp.reqkilo = true;
   }
-   else if (received_message.text && vehicleInfo.reqkilo == true){
-    user_ans.reqkilo = received_message.text;
+   else if (received_message.text && reqdtp.reqkilo == true){
+    user_say.reqkilo = received_message.text;
     response = {
       "text": "Vehicle Condition (Eg: Good or Bad)"
     }
-    vehicleInfo.reqkilo = false;
-    vehicleInfo.reqcondition = true;
+    reqdtp.reqkilo = false;
+    reqdtp.reqcondition = true;
   }
- else if (received_message.text && vehicleInfo.reqcondition == true){
-    user_ans.reqcondition = received_message.text;
+ else if (received_message.text && reqdtp.reqcondition == true){
+    user_say.reqcondition = received_message.text;
     response = {
       "text": "Vehicle Description"
     }
-    vehicleInfo.reqcondition = false;
-    vehicleInfo.reqdescri = true;
+    reqdtp.reqcondition = false;
+    reqdtp.reqdescri = true;
   }
- else if (received_message.text && vehicleInfo.reqdescri == true){
-    user_ans.reqdescri = received_message.text;
+ else if (received_message.text && reqdtp.reqdescri == true){
+    user_say.reqdescri = received_message.text;
     response = {
       "text": "How much do you expect this car to cost?"
     }
-    vehicleInfo.reqdescri = false;
-    vehicleInfo.reqcost= true;
+    reqdtp.reqdescri = false;
+    reqdtp.reqcost = true;
   }
-   else if (received_message.text && vehicleInfo.reqcost == true){
-    user_ans.reqcost = received_message.text;
-    saveData_Cost(sender_psid);
+   else if (received_message.text && reqdtp.reqcost == true){
+    user_say.reqcost = received_message.text;
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
-    vehicleInfo.reqcost = false;
+    reqdtp.reqcost = false;
   }
    else if (received_message.text == "Phone") {
     response = {
@@ -2334,20 +2323,3 @@ function saveData_thank_u(sender_psid) {
   }
   db.collection('pkpk').add(user_say);
 }
-
-function saveData_Cost(sender_psid) {
-  const carinfo = {
-    id : sender_psid,
-   reqyear : user_ans.reqyear,
-   reqmake : user_ans.reqmake,
-   reqmodel : user_ans.reqmodel,
-   reqkilo : user_ans.reqkilo,
-   reqcondition : user_ans.reqcondition,
-   reqdescri : user_ans.reqdescri,
-   reqcost : user_ans.reqcost,
-   
-  }
-  db.collection('pkpkpk').add(user_ans);
-}
-
-
