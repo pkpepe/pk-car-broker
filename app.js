@@ -322,7 +322,7 @@ else if (received_message.text && reqdtp.reqlocation == true){
         }
       }
     }
-vcinfo.reqimg:false;
+vcinfo.reqimage:false;
   } 
    else if (received_message.text == "Phone") {
     response = {
