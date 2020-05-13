@@ -296,7 +296,7 @@ else if (received_message.text && reqdtp.reqlocation == true){
       "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
     reqdtp.reqph = false;
-    reqdtp.reqthank = true;
+    reqdtp.reqlocation = true;
 
   }
   else if (received_message.text == "Hi") {    
