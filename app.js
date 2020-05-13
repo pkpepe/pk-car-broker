@@ -144,17 +144,7 @@ let reqdtp ={
     reqtime:false,
     reqlocatin:false,
     reqphone:false,
-    reqyear:false,
-    reqmake:false,
-    reqmodel:false,
-    reqkilo:false,
-    reqcondition:false,
-    reqdescri:false,
-    reqcost:false,
-    reqimg:false,
-    reqph:false,
-    reqlocation1:false,
-
+   
   };
   let user_say ={};
 
@@ -2328,19 +2318,8 @@ function saveData_thank_u(sender_psid) {
    reqday : user_say.reqday,
    reqtime: user_say.reqtime,
    reqdlocation : user_say.reqlocatin,
-   reqthank : user_say.reqthank,
    reqphone : user_say.reqphone,
-   reqyear: user_say.reqyear,
-   reqmake: user_say.reqmake,
-    reqmodel: user_say.reqmodel,
-    reqkilo: user_say.reqkilo,
-    reqcondition: user_say.reqcondition,
-    reqdescri: user_say.reqdescri,
-    reqcost: user_say.reqcost,
-    reqimg: user_say.reqimg,
-    reqph: user_say.reqph,
-    reqlocation1: user_say.reqlocation1,
-
+   
   }
   db.collection('pkpk').add(user_say);
 }
