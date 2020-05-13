@@ -30,16 +30,19 @@ const
   app = express().use(body_parser.json());
 
 
-  admin = require('firebase-admin'),
-  serviceaccount = require("./serviceaccount.json");
-
-  admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  firebase.initializeApp({
+  credential: firebase.credential.cert({
+    "private_key": process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    "client_email": process.env.FIREBASE_CLIENT_EMAIL,
+    "project_id": process.env.FIREBASE_PROJECT_ID,
+  }),
   databaseURL: "https://pk-car-broker.firebaseio.com"
-});
+  });
+  let db = firebase.firestore();   
+  
 
 
-  let db = firebase.firestore();
+  
   
 // Sets server port and logs message on success
 app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
