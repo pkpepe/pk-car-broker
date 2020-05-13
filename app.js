@@ -156,7 +156,7 @@ let reqdtp ={
   reqcondition = false,
   reqdescri = false,
   reqcost = false
- }
+ };
  let user_ans = {};
 function handleMessage(sender_psid, received_message) {
   let response;
@@ -230,7 +230,7 @@ else if (received_message.text && reqdtp.reqlocation == true){
      vehicleInfo.reqyear = true;
   }
 
-  else if (received_message.text && vehileInfo.reqyear == true){
+  else if (received_message.text && vehicleInfo.reqyear == true){
     user_ans.reqyear = received_message.text;
     response = {
       "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
