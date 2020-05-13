@@ -148,7 +148,7 @@ let reqdtp ={
   };
   let user_say ={};
  
- let veicleInfo ={
+ let vehicleInfo ={
   reqyear = false,
   reqmake = false,
   reqmodel = false,
