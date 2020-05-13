@@ -157,7 +157,7 @@ let vcinfo ={
   reqcondition:false,
   reqdescri:false,
   reqcost:false,
-}
+};
 let uservcinfo ={};
 
 
@@ -283,7 +283,7 @@ else if (received_message.text && reqdtp.reqlocation == true){
     vcinfo.reqcost = true;
   }
    else if (received_message.text && vcinfo.reqcost == true){
-    user_say.reqcost = received_message.text;
+    uservcinfo.reqcost = received_message.text;
     saveData_cost(sender_psid);
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
