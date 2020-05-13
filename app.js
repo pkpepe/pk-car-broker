@@ -241,7 +241,7 @@ else if (received_message.text && reqdtp.reqlocation == true){
   else if (received_message.text && vehicleInfo.reqmake == true){
     user_ans.reqmake = received_message.text;
     response = {
-      "text": "Vehicle Model (Eg: Vehical Name)"
+      "text": "Vehicle Model (Eg: Vehicle Name)"
     }
     vehicleInfo.reqmake = false;
     vehicleInfo.reqmodel = true;
@@ -284,7 +284,7 @@ else if (received_message.text && reqdtp.reqlocation == true){
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
-    veicleInfo.reqcost = false;
+    vehicleInfo.reqcost = false;
   }
    else if (received_message.text == "Phone") {
     response = {
@@ -2345,7 +2345,6 @@ function saveData_Cost(sender_psid) {
    reqcondition : user_ans.reqcondition,
    reqdescri : user_ans.reqdescri,
    reqcost : user_ans.reqcost,
-   
    
   }
   db.collection('pkpkpk').add(user_ans);
