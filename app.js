@@ -144,6 +144,7 @@ let reqdtp ={
     reqtime:false,
     reqlocatin:false,
     reqthank:false,
+    reqphone:false,
     reqinfo:false,
     reqmodel:false,
     reqkilo:false,
@@ -155,6 +156,7 @@ let reqdtp ={
 
   };
   let user_say ={};
+
 function handleMessage(sender_psid, received_message) {
   let response;
   
@@ -202,21 +204,21 @@ else if (received_message.text && reqdtp.reqtime == true){
     reqdtp.reqtime = false;
     reqdtp.reqlocatin = true;
   }
-else if (received_message.text && reqdtp.reqlocatin == true){
-    user_say.reqlocation = received_message.text;
+else if (received_message.text && reqdtp.reqphone == true){
+    user_say.reqphone = received_message.text;
     response = {
       "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
-    reqdtp.reqlocatin= false;
-    reqdtp.reqthank= true;
+    reqdtp.reqphone= false;
+    reqdtp.reqlocation= true;
   }
-else if (received_message.text && reqdtp.reqthank == true){
-    user_say.reqthank = received_message.text;
+else if (received_message.text && reqdtp.reqlocation == true){
+    user_say.reqlocation = received_message.text;
     saveData_thank_u(sender_psid);
     response = {
       "text": "Thank you for visiting and supporting PK Car Broker. I will contact you soon. Have a nice day :)"
     }
-    reqdtp.reqthank= false;
+    reqdtp.reqlocation= false;
 
   }
 
@@ -2318,6 +2320,7 @@ function saveData_thank_u(sender_psid) {
    reqtime: user_say.reqtime,
    reqdlocation : user_say.reqlocatin,
    reqthank : user_say.reqthank,
+   reqphone : user_say.reqphone,
    reqinfo : user_say.reqinfo,
    reqmodel : user_say.reqmodel,
    reqkilo : user_say.reqkilo,
