@@ -143,9 +143,9 @@ let reqdtp ={
     reqday:false,
     reqtime:false,
     reqlocatin:false,
-    reqthank:false,
     reqphone:false,
-    reqinfo:false,
+    reqyear:false,
+    reqmake:false,
     reqmodel:false,
     reqkilo:false,
     reqcondition:false,
@@ -153,6 +153,7 @@ let reqdtp ={
     reqcost:false,
     reqimg:false,
     reqph:false,
+    reqlocation1:false,
 
   };
   let user_say ={};
@@ -226,21 +227,29 @@ else if (received_message.text && reqdtp.reqlocation == true){
     response = {
       "text": "Vehicle Year:"
      }
-     reqdtp.reqinfo = true;
+     reqdtp.reqyear = true;
   }
 
-  else if (received_message.text && reqdtp.reqinfo == true){
-    user_say.reqinfo = received_message.text;
+  else if (received_message.text && reqdtp.reqyear == true){
+    user_say.reqyear = received_message.text;
     response = {
       "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
     }
-    reqdtp.reqinfo = false;
-    reqdtp.reqmodel = true;
+    reqdtp.reqyear = false;
+    reqdtp.reqmake = true;
   }
-  else if (received_message.text && reqdtp.reqmodel == true){
-    user_say.reqmodel = received_message.text;
+  else if (received_message.text && reqdtp.reqmake == true){
+    user_say.reqmake = received_message.text;
     response = {
       "text": "Vehicle Model (Eg: Vehical Name)"
+    }
+    reqdtp.reqmake = false;
+    reqdtp.reqmodel = true;
+  }
+   else if (received_message.text && reqdtp.reqmodel == true){
+    user_say.reqmodel = received_message.text;
+    response = {
+      "text": "Vehicle Kilo (Eg: May be 0 Kilo to 200000 Kilo)"
     }
     reqdtp.reqmodel = false;
     reqdtp.reqkilo = true;
@@ -248,15 +257,15 @@ else if (received_message.text && reqdtp.reqlocation == true){
    else if (received_message.text && reqdtp.reqkilo == true){
     user_say.reqkilo = received_message.text;
     response = {
-      "text": "Vehicle Kilo (Eg: May be 0 Kilo to 200000 Kilo)"
+      "text": "Vehicle Condition (Eg: Good or Bad)"
     }
     reqdtp.reqkilo = false;
     reqdtp.reqcondition = true;
   }
-   else if (received_message.text && reqdtp.reqcondition == true){
+ else if (received_message.text && reqdtp.reqcondition == true){
     user_say.reqcondition = received_message.text;
     response = {
-      "text": "Vehicle Condition (Eg: Good or Bad)"
+      "text": "Vehicle Description"
     }
     reqdtp.reqcondition = false;
     reqdtp.reqdescri = true;
@@ -264,25 +273,17 @@ else if (received_message.text && reqdtp.reqlocation == true){
  else if (received_message.text && reqdtp.reqdescri == true){
     user_say.reqdescri = received_message.text;
     response = {
-      "text": "Vehicle Description"
+      "text": "How much do you expect this car to cost?"
     }
     reqdtp.reqdescri = false;
     reqdtp.reqcost = true;
   }
- else if (received_message.text && reqdtp.reqcost == true){
+   else if (received_message.text && reqdtp.reqcost == true){
     user_say.reqcost = received_message.text;
-    response = {
-      "text": "How much do you expect this car to cost?"
-    }
-    reqdtp.reqcost = false;
-    reqdtp.reqimg = true;
-  }
-   else if (received_message.text && reqdtp.reqimg == true){
-    user_say.reqimg = received_message.text;
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
-    reqdtp.reqimg = false;
+    reqdtp.reqcost = false;
   }
    else if (received_message.text == "Phone") {
     response = {
@@ -296,7 +297,15 @@ else if (received_message.text && reqdtp.reqlocation == true){
       "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
     reqdtp.reqph = false;
-    reqdtp.reqlocation = true;
+    reqdtp.reqlocation1 = true;
+
+  }
+  else if (received_message.text && reqdtp.reqlocation1 == true){
+    user_say.reqlocation1 = received_message.text;
+    response = {
+      "text": "Thank you for visiting and supporting PK Car Broker. I will contact you soon. Have a nice day :)"
+    }
+    reqdtp.reqlocation1 = false;
 
   }
   else if (received_message.text == "Hi") {    
@@ -2321,14 +2330,17 @@ function saveData_thank_u(sender_psid) {
    reqdlocation : user_say.reqlocatin,
    reqthank : user_say.reqthank,
    reqphone : user_say.reqphone,
-   reqinfo : user_say.reqinfo,
-   reqmodel : user_say.reqmodel,
-   reqkilo : user_say.reqkilo,
-   reqcondition : user_say.reqcondition,
-   reqdescri : user_say.reqdescri,
-   reqcost : user_say.reqcost,
-   reqimg : user_say.reqimg,
-   reqph : user_say.reqph,
+   reqyear: user_say.reqyear,
+   reqmake: user_say.reqmake,
+    reqmodel: user_say.reqmodel,
+    reqkilo: user_say.reqkilo,
+    reqcondition: user_say.reqcondition,
+    reqdescri: user_say.reqdescri,
+    reqcost: user_say.reqcost,
+    reqimg: user_say.reqimg,
+    reqph: user_say.reqph,
+    reqlocation1: user_say.reqlocation1,
+
   }
   db.collection('pkpk').add(user_say);
 }
