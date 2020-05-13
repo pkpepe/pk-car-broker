@@ -155,7 +155,7 @@ let reqdtp ={
   reqkilo = false,
   reqcondition = false,
   reqdescri = false,
-  reqcost = false
+  reqcost = false,
  };
  let user_ans = {};
 function handleMessage(sender_psid, received_message) {
@@ -2348,7 +2348,7 @@ function saveData_Cost(sender_psid) {
    
    
   }
-  db.collection('pkpk1').add(user_ans);
+  db.collection('pkpkpk').add(user_ans);
 }
 
 
