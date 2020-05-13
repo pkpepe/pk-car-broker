@@ -27,8 +27,20 @@ const
   request = require('request'),
   express = require('express'),
   body_parser = require('body-parser'),
-  app = express().use(body_parser.json()); // creates express http server
+  app = express().use(body_parser.json());
 
+
+  admin = require('firebase-admin'),
+  serviceaccount = require("./serviceaccount.json");
+
+  admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://pk-car-broker.firebaseio.com"
+});
+
+
+  let db = firebase.firestore();
+  
 // Sets server port and logs message on success
 app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
 
@@ -134,7 +146,7 @@ let reqdtp ={
     reqimg:false,
     reqph:false,
 
-  };
+  }
   let user_say ={};
 function handleMessage(sender_psid, received_message) {
   let response;
@@ -184,7 +196,7 @@ else if (received_message.text && reqdtp.reqtime == true){
     reqdtp.reqlocatin = true;
   }
 else if (received_message.text && reqdtp.reqlocatin == true){
-    user_say.reqtime = received_message.text;
+    user_say.reqlocation = received_message.text;
     response = {
       "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
@@ -192,11 +204,13 @@ else if (received_message.text && reqdtp.reqlocatin == true){
     reqdtp.reqthank= true;
   }
 else if (received_message.text && reqdtp.reqthank == true){
-    user_say.reqtime = received_message.text;
+    user_say.reqthank = received_message.text;
+    saveData_thank_u(sender_psid);
     response = {
       "text": "Thank you for visiting and supporting PK Car Broker. I will contact you soon. Have a nice day :)"
     }
     reqdtp.reqthank= false;
+
   }
 
  else if (received_message.text == "Fill vehicle info") {
@@ -207,7 +221,7 @@ else if (received_message.text && reqdtp.reqthank == true){
   }
 
   else if (received_message.text && reqdtp.reqinfo == true){
-    user_say.reqday = received_message.text;
+    user_say.reqinfo = received_message.text;
     response = {
       "text": "Vehicle Make (Eg: Toyota, Honda etc..)"
     }
@@ -215,7 +229,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqmodel = true;
   }
   else if (received_message.text && reqdtp.reqmodel == true){
-    user_say.reqday = received_message.text;
+    user_say.reqmodel = received_message.text;
     response = {
       "text": "Vehicle Model (Eg: Vehical Name)"
     }
@@ -223,7 +237,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqkilo = true;
   }
    else if (received_message.text && reqdtp.reqkilo == true){
-    user_say.reqday = received_message.text;
+    user_say.reqkilo = received_message.text;
     response = {
       "text": "Vehicle Kilo (Eg: May be 0 Kilo to 200000 Kilo)"
     }
@@ -231,7 +245,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqcondition = true;
   }
    else if (received_message.text && reqdtp.reqcondition == true){
-    user_say.reqday = received_message.text;
+    user_say.reqcondition = received_message.text;
     response = {
       "text": "Vehicle Condition (Eg: Good or Bad)"
     }
@@ -239,7 +253,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqdescri = true;
   }
  else if (received_message.text && reqdtp.reqdescri == true){
-    user_say.reqday = received_message.text;
+    user_say.reqdescri = received_message.text;
     response = {
       "text": "Vehicle Description"
     }
@@ -247,7 +261,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqcost = true;
   }
  else if (received_message.text && reqdtp.reqcost == true){
-    user_say.reqday = received_message.text;
+    user_say.reqcost = received_message.text;
     response = {
       "text": "How much do you expect this car to cost?"
     }
@@ -255,7 +269,7 @@ else if (received_message.text && reqdtp.reqthank == true){
     reqdtp.reqimg = true;
   }
    else if (received_message.text && reqdtp.reqimg == true){
-    user_say.reqday = received_message.text;
+    user_say.reqimg = received_message.text;
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
@@ -268,12 +282,13 @@ else if (received_message.text && reqdtp.reqthank == true){
      reqdtp.reqph =true;
   }
   else if (received_message.text && reqdtp.reqph == true){
-    user_say.reqday = received_message.text;
+    user_say.reqph = received_message.text;
     response = {
       "text": "Where do you want to look the car? PS : Customers are most viewd at Tea Shop, Car Market Place, Restaurants and so on."
     }
     reqdtp.reqph = false;
     reqdtp.reqthank = true;
+
   }
   else if (received_message.text == "Hi") {    
     // Create the payload for a basic text message, which
@@ -2289,3 +2304,21 @@ function removePersistentMenu(res){
             }
         });
     } 
+function saveData_thank_u(sender_psid) {
+  const car_broker = {
+    id : sender_psid,
+   reqday : user_say.reqday,
+   reqtime: user_say.reqtime,
+   reqdlocation : user_say.reqlocatin,
+   reqthank : user_say.reqthank,
+   reqinfo : user_say.reqinfo,
+   reqmodel : user_say.reqmodel,
+   reqkilo : user_say.reqkilo,
+   reqcondition : user_say.reqcondition,
+   reqdescri : user_say.reqdescri,
+   reqcost : user_say.reqcost,
+   reqimg : user_say.reqimg,
+   reqph : user_say.reqph,
+  }
+  db.collection('pkpk').add(user_say);
+}
