@@ -160,9 +160,6 @@ let vcinfo ={
 }
 let uservcinfo ={};
 
-let vcdetail ={
-  req
-}
 
 
 function handleMessage(sender_psid, received_message) {
