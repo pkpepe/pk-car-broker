@@ -157,7 +157,6 @@ let vcinfo ={
   reqcondition:false,
   reqdescri:false,
   reqcost:false,
-  reqimage:false,
 };
 let uservcinfo ={};
 
@@ -285,45 +284,12 @@ else if (received_message.text && reqdtp.reqlocation == true){
   }
    else if (received_message.text && vcinfo.reqcost == true){
     uservcinfo.reqcost = received_message.text;
-    
+    saveData_cost(sender_psid);
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
     vcinfo.reqcost = false;
-    vcinfo.reqimage = true;
   }
-  else if (received_message.attachments && vcinfo.reqimg == true) {
-    uservcinfo.reqimg = received_message.attachments;
-    saveData_cost(sender_psid);
-    // Get the URL of the message attachment
-    let attachment_url = uservcinfo.reqimg[0].payload.url;
-    response = {
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "generic",
-          "elements": [{
-            "title": "Is this the right picture?",
-            "subtitle": "Tap a button to answer.",
-            "image_url": attachment_url,
-            "buttons": [
-              {
-                "type": "postback",
-                "title": "Yes!",
-                "payload": "ok",
-              },
-              {
-                "type": "postback",
-                "title": "No!",
-                "payload": "no",
-              }
-            ],
-          }]
-        }
-      }
-    }
-vcinfo.reqimage:false;
-  } 
    else if (received_message.text == "Phone") {
     response = {
       "text": "Type your phone number"
@@ -1373,7 +1339,36 @@ vcinfo.reqimage:false;
     }
   }
    
-  
+  else if (received_message.attachments) {
+    // Get the URL of the message attachment
+    let attachment_url = received_message.attachments[0].payload.url;
+    response = {
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type": "generic",
+          "elements": [{
+            "title": "Is this the right picture?",
+            "subtitle": "Tap a button to answer.",
+            "image_url": attachment_url,
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Yes!",
+                "payload": "ok",
+              },
+              {
+                "type": "postback",
+                "title": "No!",
+                "payload": "no",
+              }
+            ],
+          }]
+        }
+      }
+    }
+
+  } 
   
   
   // Send the response message
@@ -2354,7 +2349,6 @@ function saveData_cost(sender_psid) {
    reqcondition : uservcinfo.reqcondition,
    reqdescri : uservcinfo.reqdescri,
    reqcost : uservcinfo.reqcost,
-   reqimage : uservcinfo.reqimage,
    
   }
   db.collection('kwi').add(uservcinfo);
