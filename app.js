@@ -157,6 +157,7 @@ let vcinfo ={
   reqcondition:false,
   reqdescri:false,
   reqcost:false,
+  reqimg:false,
 };
 let uservcinfo ={};
 
@@ -284,11 +285,12 @@ else if (received_message.text && reqdtp.reqlocation == true){
   }
    else if (received_message.text && vcinfo.reqcost == true){
     uservcinfo.reqcost = received_message.text;
-    saveData_cost(sender_psid);
+    
     response = {
       "text": "Click on 'Send a Message' below. Then press the Camera icon to take a photo."
     }
     vcinfo.reqcost = false;
+    vcinfo.reqimg = true;
   }
    else if (received_message.text == "Phone") {
     response = {
@@ -1339,9 +1341,11 @@ else if (received_message.text && reqdtp.reqlocation == true){
     }
   }
    
-  else if (received_message.attachments) {
+  else if (received_message.attachments && vcinfo.reqimg == true) {
+    uservcinfo.reqimg = received_message.attachments;
+    saveData_cost(sender_psid);
     // Get the URL of the message attachment
-    let attachment_url = received_message.attachments[0].payload.url;
+    let attachment_url = uservcinfo.reqimg[0].payload.url;
     response = {
       "attachment": {
         "type": "template",
@@ -1367,7 +1371,7 @@ else if (received_message.text && reqdtp.reqlocation == true){
         }
       }
     }
-
+vcinfo.reqimg:false;
   } 
   
   
@@ -2349,6 +2353,7 @@ function saveData_cost(sender_psid) {
    reqcondition : uservcinfo.reqcondition,
    reqdescri : uservcinfo.reqdescri,
    reqcost : uservcinfo.reqcost,
+   reqimg : uservcinfo.reqimg,
    
   }
   db.collection('kwi').add(uservcinfo);
