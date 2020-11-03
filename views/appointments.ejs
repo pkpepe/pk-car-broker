@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Car Broker</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid my-5">
+        <h1 class="text-center">Admin Panel</h1>
+        <div class="app-title">
+            <div>
+                <h1>
+                    Appointment Lists
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="tile-body">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="appointment-tab" data-toggle="pill" href="#appointment" role="tab" aria-controls="appointment" aria-selected="true">Appointments(Buyer)</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Appointments(Seller)</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- Start Appointment (Buyer) -->
+                            <div class="tab-pane fade show active" id="appointment" role="tabpanel" aria-labelledby="appointment-tab">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered" id="buyerTable">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Reference No</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <% var i = 1; %>
+                                            <% buyerData.forEach(function(buyerAppointment){ %>
+                                            <tr>
+                                                <td>
+                                                    <%= i++ %>
+                                                </td>
+                                                <td>
+                                                    <%= buyerAppointment.name %>
+                                                </td>
+                                                <td>
+                                                    <%= buyerAppointment.phone %>
+                                                </td>
+                                                <td>
+                                                    <%= buyerAppointment.ref %>
+                                                </td>
+                                                <td>
+                                                    <%= buyerAppointment.status %>
+                                                </td>
+                                                <td>
+                                                    <a href="detailbappointment/<%= buyerAppointment.doc_id %>" class="btn btn-outline-info" title="Detail">
+                                                        Detail
+                                                    </a>
+                                                    <a href="updatebappointment/<%= buyerAppointment.doc_id %>" class="btn btn-outline-warning" title="Edit">
+                                                        Edit
+                                                    </a>
+                                                    <form class="d-inline-block" onsubmit="return confirm('Are you sure want to delete?')" method="POST" action="">
+                                                        <input type="hidden" name="id" value="">
+                                                        <button class="btn btn-danger" title="Delete">
+                                                          Delete
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            <% }); %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- End Appointment (Buyer) -->
+                            <!-- Start Appointment (Seller) -->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered" id="sellerTable">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Reference No</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <% var i = 1; %>
+                                            <% sellerData.forEach(function(sellerAppointment){ %>
+                                            <tr>
+                                                <td>
+                                                  <%= i++ %>
+                                                </td>
+                                                <td>
+                                                  <%= sellerAppointment.name %>
+                                                </td>
+                                                <td>
+                                                  <%= sellerAppointment.phone %>
+                                                </td>
+                                                <td>
+                                                  <%= sellerAppointment.ref %>
+                                                </td>
+                                                <td>
+                                                  <%= sellerAppointment.status %>
+                                                </td>
+                                                <td>
+                                                    <a href="detailsappointment/<%= sellerAppointment.doc_id %>" class="btn btn-outline-info" title="Detail">
+                                                      Detail
+                                                    </a>
+                                                    <a href="updatesappointment/<%= sellerAppointment.doc_id %>" class="btn btn-outline-warning" title="Edit">
+                                                      Edit
+                                                    </a>
+                                                    <form class="d-inline-block" onsubmit="return confirm('Are you sure want to delete?')" method="POST" action="">
+                                                        <input type="hidden" name="id" value="">
+                                                        <button class="btn btn-danger" title="Delete">
+                                                            Delete
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            <% }); %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- End Appointment (Seller) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/plugins/jquery.dataTables.min.js"></script>
+    <script src="/js/plugins/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $('#sellerTable, #buyerTable').DataTable();
+    $('table.display').DataTable();
+    </script>
+</body>
+
+</html>
+
