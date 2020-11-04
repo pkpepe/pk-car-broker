@@ -16,10 +16,15 @@
         <h1 class="text-center">Admin Panel</h1>
         <div class="app-title">
             <div>
-                <h1>
+                <h1 class="ml-3">
                     Appointment Lists
                 </h1>
             </div>
+            <ul class="app-breadcrumb breadcrumb side mr-3">
+                <a href="logout" class="btn btn-outline-primary">
+                    Logout
+                </a>
+            </ul>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -43,6 +48,7 @@
                                                 <th>No</th>
                                                 <th>Name</th>
                                                 <th>Phone</th>
+                                                <th>Date</th>
                                                 <th>Reference No</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
@@ -62,6 +68,9 @@
                                                     <%= buyerAppointment.phone %>
                                                 </td>
                                                 <td>
+                                                    <%= buyerAppointment.date %>
+                                                </td>
+                                                <td>
                                                     <%= buyerAppointment.ref %>
                                                 </td>
                                                 <td>
@@ -74,10 +83,10 @@
                                                     <a href="updatebappointment/<%= buyerAppointment.doc_id %>" class="btn btn-outline-warning" title="Edit">
                                                         Edit
                                                     </a>
-                                                    <form class="d-inline-block" onsubmit="return confirm('Are you sure want to delete?')" method="POST" action="">
-                                                        <input type="hidden" name="id" value="">
+                                                    <form class="d-inline-block" onsubmit="return confirm('Are you sure want to delete?')" method="POST" action="deleteBuyerAppointment">
+                                                        <input type="hidden" name="doc_id" value="<%= buyerAppointment.doc_id %>">
                                                         <button class="btn btn-danger" title="Delete">
-                                                          Delete
+                                                            Delete
                                                         </button>
                                                     </form>
                                                 </td>
@@ -97,6 +106,7 @@
                                                 <th>No</th>
                                                 <th>Name</th>
                                                 <th>Phone</th>
+                                                <th>Date</th>
                                                 <th>Reference No</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
@@ -107,29 +117,32 @@
                                             <% sellerData.forEach(function(sellerAppointment){ %>
                                             <tr>
                                                 <td>
-                                                  <%= i++ %>
+                                                    <%= i++ %>
                                                 </td>
                                                 <td>
-                                                  <%= sellerAppointment.name %>
+                                                    <%= sellerAppointment.name %>
                                                 </td>
                                                 <td>
-                                                  <%= sellerAppointment.phone %>
+                                                    <%= sellerAppointment.phone %>
                                                 </td>
                                                 <td>
-                                                  <%= sellerAppointment.ref %>
+                                                    <%= sellerAppointment.date %>
                                                 </td>
                                                 <td>
-                                                  <%= sellerAppointment.status %>
+                                                    <%= sellerAppointment.ref %>
+                                                </td>
+                                                <td>
+                                                    <%= sellerAppointment.status %>
                                                 </td>
                                                 <td>
                                                     <a href="detailsappointment/<%= sellerAppointment.doc_id %>" class="btn btn-outline-info" title="Detail">
-                                                      Detail
+                                                        Detail
                                                     </a>
                                                     <a href="updatesappointment/<%= sellerAppointment.doc_id %>" class="btn btn-outline-warning" title="Edit">
-                                                      Edit
+                                                        Edit
                                                     </a>
-                                                    <form class="d-inline-block" onsubmit="return confirm('Are you sure want to delete?')" method="POST" action="">
-                                                        <input type="hidden" name="id" value="">
+                                                    <form class="d-inline-block" onsubmit="return confirm('Are you sure want to delete?')" method="POST" action="deleteSellerAppointment">
+                                                        <input type="hidden" name="doc_id" value="<%= sellerAppointment.doc_id %>">
                                                         <button class="btn btn-danger" title="Delete">
                                                             Delete
                                                         </button>
@@ -160,4 +173,3 @@
 </body>
 
 </html>
-
